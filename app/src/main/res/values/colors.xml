@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="airBlue">#008fb4</color>
+    <color name="white">#ffffff</color>
+    <color name="grey1">#f5f9fb</color>
+    <color name="grey2">#e7eef1</color>
+    <color name="grey3">#cad7dc</color>
+    <color name="grey4">#839094</color>
+    <color name="grey5">#3a3d3e</color>
+    <color name="red">#000</color>
+    <color name="airBlueMid">#186b8e</color>
+    <color name="airGreen">#9fc104</color>
+    <color name="airGreenButtonEnd">#a4be01</color>
+    <color name="airGreenButtonInset">#9dd801</color>
+    <color name="airGreenButtonPressed">#749a01</color>
+    <color name="airGreenButtonStart">#82ac02</color>
+    <color name="airOrange">#f5ab5d</color>
+    <color name="airOrangeLight">#f5cd5d</color>
+    <color name="airPink">#fb675b</color>
+    <color name="airPinkPressed">#e5695f</color>
+    <color name="airRed">#ec514b</color>
+
+    <color name="white_transparent_40">#66ffffff</color>
+    <color name="white_transparent_70">#b3ffffff</color>
+    <color name="white_transparent_89">#efffffff</color>
+    <color name="white_transparent_98">#f9ffffff</color>
+
+    <color name="blue100">#51a0ca</color>
+    <color name="blue200">#1980b3</color>
+    <color name="blue_end">#3e5d9d</color>
+    <color name="blue_start">#5070b2</color>
+
+    <color name="hotPink">#ff0080</color>
+
+    <color name="splashScreenBackground">@color/airBlue</color>
+    <color name="airtasker_application_background">@color/white</color>
+    <color name="airtasker_primary_color">@color/airBlue</color>
+    <color name="navigation_bar_colour">@color/white_transparent_89</color>
+    <color name="default_blue_grey_selector">@color/blue100</color>
+</resources>
