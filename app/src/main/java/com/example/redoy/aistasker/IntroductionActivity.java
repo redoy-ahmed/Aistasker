@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -12,7 +13,7 @@ import butterknife.ButterKnife;
 public class IntroductionActivity extends AppCompatActivity {
 
     @BindView(R.id.introduction_button_login)
-    Button mButtonLogin;
+    ImageButton mButtonLogin;
 
     @BindView(R.id.introduction_button_sign_up)
     Button mButtonSignUp;
@@ -26,13 +27,13 @@ public class IntroductionActivity extends AppCompatActivity {
         mButtonSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(IntroductionActivity.this, SignUpLoginActivity.class));
+                startActivity(new Intent(IntroductionActivity.this, SignUpActivity.class));
             }
         });
         mButtonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(IntroductionActivity.this, SignUpLoginActivity.class));
+                startActivity(new Intent(IntroductionActivity.this, SignUpActivity.class));
             }
         });
     }

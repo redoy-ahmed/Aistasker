@@ -13,4 +13,11 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="AirtaskeButtonFacebook">
+        <item name="android:color">@color/white</item>
+        <item name="android:src">@drawable/button_facebook</item>
+        <item name="android:textSize">@dimen/huge</item>
+        <item name="android:icon">@drawable/ic_facebook_letter_f</item>
+    </style>
+
 </resources>
