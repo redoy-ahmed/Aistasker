@@ -1,13 +1,282 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/navigation_bar_height">
 
-
-    <TextView
-        android:layout_width="wrap_content"
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="post task" />
+        android:layout_marginLeft="@dimen/large"
+        android:layout_marginRight="@dimen/large"
+        android:paddingBottom="24dp"
+        android:paddingTop="@dimen/medium"
+        app:columnCount="3"
+        app:orientation="horizontal">
 
-</RelativeLayout>
+        <FrameLayout
+            android:id="@+id/suggestions_layout_cleaning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/suggestions_asset_top_margin"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:layout_columnWeight="1.0">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:layout_marginBottom="@dimen/suggestions_asset_bottom_padding"
+                android:src="@drawable/ic_task_category_cleaning" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:layout_marginLeft="@dimen/post_task_grid_layout_textview_margin_left"
+                android:text="@string/suggestions_cleaning_label"
+                android:textColor="@color/grey4" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/suggestions_layout_assembly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/suggestions_asset_top_margin"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:layout_columnWeight="1.0">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:layout_marginBottom="@dimen/suggestions_asset_bottom_padding"
+                android:src="@drawable/ic_task_category_assembly" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:layout_marginLeft="@dimen/post_task_grid_layout_textview_margin_left"
+                android:text="@string/suggestions_assembly_label"
+                android:textColor="@color/grey4" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/suggestions_layout_handyman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/suggestions_asset_top_margin"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:layout_columnWeight="1.0">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:layout_marginBottom="@dimen/suggestions_asset_bottom_padding"
+                android:src="@drawable/ic_task_category_handyman" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:layout_marginLeft="@dimen/post_task_grid_layout_textview_margin_left"
+                android:text="@string/suggestions_handyman_label"
+                android:textColor="@color/grey4" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/suggestions_layout_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/suggestions_asset_top_margin"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:layout_columnWeight="1.0">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:layout_marginBottom="@dimen/suggestions_asset_bottom_padding"
+                android:src="@drawable/ic_task_category_delivery" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:layout_marginLeft="@dimen/post_task_grid_layout_textview_margin_left"
+                android:text="@string/suggestions_delivery_label"
+                android:textColor="@color/grey4" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/suggestions_layout_gardening"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/suggestions_asset_top_margin"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:layout_columnWeight="1.0">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:layout_marginBottom="@dimen/suggestions_asset_bottom_padding"
+                android:src="@drawable/ic_task_category_gardening" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:layout_marginLeft="@dimen/post_task_grid_layout_textview_margin_left"
+                android:text="@string/suggestions_gardening_label"
+                android:textColor="@color/grey4" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/suggestions_layout_removalists"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/suggestions_asset_top_margin"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:layout_columnWeight="1.0">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:layout_marginBottom="@dimen/suggestions_asset_bottom_padding"
+                android:src="@drawable/ic_task_category_removalists" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:layout_marginLeft="10dp"
+                android:text="@string/suggestions_removalists_label"
+                android:textColor="@color/grey4" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/suggestions_layout_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/suggestions_asset_top_margin"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:layout_columnWeight="1.0">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:layout_marginBottom="@dimen/suggestions_asset_bottom_padding"
+                android:src="@drawable/ic_task_category_admin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:layout_marginLeft="@dimen/post_task_grid_layout_textview_margin_left"
+                android:text="@string/suggestions_admin_label"
+                android:textColor="@color/grey4" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/suggestions_layout_it"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/suggestions_asset_top_margin"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:layout_columnWeight="1.0">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:layout_marginBottom="@dimen/suggestions_asset_bottom_padding"
+                android:src="@drawable/ic_task_category_it"
+                android:textColor="@color/grey4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:text="@string/suggestions_it_label" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/suggestions_layout_photography"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/suggestions_asset_top_margin"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:layout_columnWeight="1.0">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:layout_marginBottom="@dimen/suggestions_asset_bottom_padding"
+                android:src="@drawable/ic_task_category_photography" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:text="@string/suggestions_photography_label"
+                android:textColor="@color/grey4" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/suggestions_layout_coles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/suggestions_asset_top_margin"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:layout_column="0"
+            app:layout_columnSpan="1"
+            app:layout_columnWeight="1.0">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:layout_marginBottom="@dimen/suggestions_asset_bottom_padding"
+                android:src="@drawable/ic_task_category_coles" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:text="@string/suggestions_coles_label"
+                android:textColor="@color/grey4" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/suggestions_layout_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/suggestions_asset_top_margin"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:layout_column="1"
+            app:layout_columnSpan="1"
+            app:layout_columnWeight="1.0">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:layout_marginBottom="@dimen/suggestions_asset_bottom_padding"
+                android:src="@drawable/ic_task_category_other" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:text="@string/suggestions_other_label"
+                android:textColor="@color/grey4" />
+        </FrameLayout>
+    </android.support.v7.widget.GridLayout>
+</ScrollView>

@@ -30,4 +30,55 @@
     <string name="sign_up_login_screen_title_sign_up">Sign up</string>
     <string name="sign_up_login_separator_or">or</string>
 
+    <string name="suggestion_name_cleaning">cleaning</string>
+    <string name="suggestion_name_coles">Coles shopping</string>
+    <string name="suggestion_name_furniture">furniture</string>
+    <string name="suggestion_name_garden">garden</string>
+    <string name="suggestion_name_handyman">handyman</string>
+    <string name="suggestion_name_it">it</string>
+    <string name="suggestion_name_moving">moving</string>
+    <string name="suggestion_name_office">office</string>
+    <string name="suggestion_name_other">other</string>
+    <string name="suggestion_name_photography">photography</string>
+    <string name="suggestion_name_pickup">pickup</string>
+
+    <string name="suggestion_example_cleaning">eg. Clean my 2 bedroom apartment</string>
+    <string name="suggestion_example_furniture">eg. Install my new wardrobe</string>
+    <string name="suggestion_example_garden">eg. General garden maintenance</string>
+    <string name="suggestion_example_handyman">eg. Wall mount my television</string>
+    <string name="suggestion_example_it">eg. Set up my new computer</string>
+    <string name="suggestion_example_moving">eg. Help with moving my apartment</string>
+    <string name="suggestion_example_office">eg. Need an assistant for the day</string>
+    <string name="suggestion_example_other">What do you need done?</string>
+    <string name="suggestion_example_photography">eg. Website photography</string>
+    <string name="suggestion_example_pickup">eg. Deliver a small parcel</string>
+    <string name="misc_empty_string"></string>
+
+    <string name="suggestions_admin_label">Admin</string>
+    <string name="suggestions_assembly_label">Assembly</string>
+    <string name="suggestions_cleaning_label">Cleaning</string>
+    <string name="suggestions_coles_label">Coles shopping</string>
+    <string name="suggestions_delivery_label">Delivery</string>
+    <string name="suggestions_gardening_label">Gardening</string>
+    <string name="suggestions_handyman_label">Handyman</string>
+    <string name="suggestions_it_label">Computer IT</string>
+    <string name="suggestions_other_label">Anything else</string>
+    <string name="suggestions_photography_label">Photography</string>
+    <string name="suggestions_removalists_label">Removalists</string>
+    <string name="suggestions_screen_title">Post a task</string>
+
+    <string name="dashboard_screen_title">Dashboard</string>
+    <string name="more_options_profile_label">Profile</string>
+    <string name="more_options_payment_history_label">Payment history</string>
+    <string name="more_options_payments">Payment methods</string>
+    <string name="more_options_reviews_label">Reviews</string>
+    <string name="more_options_notifications_label">Notifications</string>
+    <string name="task_alerts_screen_title">Task alerts</string>
+    <string name="more_options_settings_label">Settings</string>
+    <string name="more_options_help_label">Help</string>
+
+    <string name="more_options_referrals_label">Get Airtasker credit</string>
+    <string name="more_options_logout_label">Logout</string>
+
+
 </resources>

@@ -47,4 +47,7 @@ dependencies {
 
     //multidex
     implementation 'com.android.support:multidex:1.0.0'
+
+    //gridlayout
+    implementation 'com.android.support:gridlayout-v7:26.1.0'
 }

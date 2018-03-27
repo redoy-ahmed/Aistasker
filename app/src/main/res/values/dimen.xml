@@ -8,4 +8,18 @@
     <dimen name="corner_radius">4dp</dimen>
     <dimen name="tiny">2dp</dimen>
     <dimen name="edit_text_padding_login_screen_only">16dp</dimen>
+    <dimen name="navigation_bar_height">50dp</dimen>
+    <dimen name="suggestions_asset_top_margin">24dp</dimen>
+    <dimen name="suggestions_asset_bottom_padding">24dp</dimen>
+    <dimen name="post_task_grid_layout_textview_margin_left">15dp</dimen>
+
+    <dimen name="margin_page_half_pager">16dp</dimen>
+    <dimen name="margin_page_standard">16dp</dimen>
+    <dimen name="masked_card_icon_width">32dp</dimen>
+    <dimen name="masked_card_list_top_margin">8dp</dimen>
+    <dimen name="masked_card_row_end_padding">8dp</dimen>
+    <dimen name="masked_card_row_height">48dp</dimen>
+    <dimen name="masked_card_row_start_padding">20dp</dimen>
+    <dimen name="masked_card_vertical_padding">4dp</dimen>
+
 </resources>

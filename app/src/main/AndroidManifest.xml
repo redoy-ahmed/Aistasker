@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".application.AirtaskerApp"
         android:allowBackup="true"
@@ -22,7 +23,8 @@
         <activity android:name=".activities.IntroductionActivity" />
         <activity android:name=".activities.SignUpActivity" />
         <activity android:name=".activities.MenuActivity" />
-        <activity android:name=".activities.LogInActivity"></activity>
+        <activity android:name=".activities.LogInActivity" />
+        <activity android:name=".activities.PostTaskActivity"></activity>
     </application>
 
 </manifest>
