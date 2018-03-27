@@ -4,35 +4,27 @@
     <item
         android:id="@+id/bottom_nav_bar_post_task"
         android:enabled="true"
-        android:title="@string/bottom_navigation_bar_post_task_label"
-        android:textColor="@color/default_blue_grey_selector"
         android:icon="@drawable/ic_nav_bar_new_task"
-        app:showAsAction="ifRoom" />
+        android:title="@string/bottom_navigation_bar_post_task_label"
+        app:showAsAction="always|withText" />
     <item
         android:id="@+id/bottom_nav_bar_my_task"
-        android:enabled="true"
         android:icon="@drawable/ic_nav_bar_my_task"
-        android:textColor="@color/default_blue_grey_selector"
         android:title="@string/bottom_navigation_bar_my_tasks_label"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="always|withText" />
     <item
         android:id="@+id/bottom_nav_bar_browse_tasks"
-        android:enabled="true"
-        android:textColor="@color/default_blue_grey_selector"
         android:icon="@drawable/ic_nav_bar_browse"
         android:title="@string/bottom_navigation_bar_browse_label"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="always|withText" />
     <item
         android:id="@+id/bottom_nav_bar_messages"
-        android:enabled="true"
-        android:textColor="@color/default_blue_grey_selector"
         android:icon="@drawable/ic_nav_bar_messages"
         android:title="@string/bottom_navigation_bar_messages_label"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="always|withText" />
     <item
         android:id="@+id/bottom_nav_bar_more"
-        android:enabled="true"
         android:icon="@drawable/ic_nav_bar_more"
         android:title="@string/bottom_navigation_bar_more_label"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="always|withText" />
 </menu>

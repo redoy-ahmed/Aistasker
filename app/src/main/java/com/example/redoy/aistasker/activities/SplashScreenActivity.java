@@ -1,10 +1,11 @@
-package com.example.redoy.aistasker;
+package com.example.redoy.aistasker.activities;
 
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Window;
+
+import com.example.redoy.aistasker.R;
 
 public class SplashScreenActivity extends AppCompatActivity {
 

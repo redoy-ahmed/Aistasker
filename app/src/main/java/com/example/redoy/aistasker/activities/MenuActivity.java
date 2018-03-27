@@ -1,12 +1,20 @@
-package com.example.redoy.aistasker;
+package com.example.redoy.aistasker.activities;
 
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.MenuItem;
+
+import com.example.redoy.aistasker.R;
+import com.example.redoy.aistasker.fragments.BrowseTaskListFragment;
+import com.example.redoy.aistasker.fragments.MessagesListFragment;
+import com.example.redoy.aistasker.fragments.MoreOptionsFragment;
+import com.example.redoy.aistasker.fragments.MyTaskListFragment;
+import com.example.redoy.aistasker.fragments.PostTaskFragment;
+import com.example.redoy.aistasker.widget.BottomNavigationViewHelper;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -16,7 +24,7 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-
+        BottomNavigationViewHelper.removeShiftMode(bottomNavigationView);
         bottomNavigationView.setOnNavigationItemSelectedListener(
                 new BottomNavigationView.OnNavigationItemSelectedListener() {
                     @Override
@@ -41,13 +49,15 @@ public class MenuActivity extends AppCompatActivity {
                                 mFragment = new MoreOptionsFragment();
                                 break;
                         }
-                        
+
                         FragmentManager mFragmentManager = getSupportFragmentManager();
                         if (mFragment != null) {
-                            mFragmentManager.beginTransaction().replace(R.id.container, mFragment).commit();
+                            mFragmentManager.beginTransaction().replace(R.id.frame_layout, mFragment).commit();
                         }
                         return true;
                     }
                 });
+
+        bottomNavigationView.getMenu().getItem(0).setChecked(true);
     }
 }
