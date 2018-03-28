@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
                 android:drawablePadding="@dimen/large"
-                android:drawableTop="@drawable/empty_state_browse"
+                android:drawableTop="@drawable/empty_state_my_tasks"
                 android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
                 android:padding="@dimen/large"
                 android:text="@string/browse_tasks_empty_state_browse_tasks"

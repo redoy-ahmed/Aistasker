@@ -51,7 +51,7 @@ public class BrowseTaskListFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        rootView = inflater.inflate(R.layout.fragment_task_list, container, false);
+        rootView = inflater.inflate(R.layout.fragment_browse_task_list, container, false);
         ButterKnife.bind(this, rootView);
 
         initializeData();

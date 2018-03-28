@@ -87,11 +87,20 @@
     <string name="browse_tasks_empty_state_change_filters">Change filters</string>
 
     <string name="country_prompt">Choose a country</string>
-
     <string-array name="country_arrays">
         <item>Australia</item>
         <item>United Kingdom</item>
     </string-array>
+
+    <string name="browse_tasks_my_tasks_tab_label_all">All</string>
+    <string name="browse_tasks_my_tasks_tab_label_assigned">Assigned</string>
+    <string name="browse_tasks_my_tasks_tab_label_completed">Completed</string>
+    <string name="browse_tasks_my_tasks_tab_label_draft">Draft</string>
+    <string name="browse_tasks_my_tasks_tab_label_offered">Offered</string>
+    <string name="browse_tasks_my_tasks_tab_label_posted">Posted</string>
+    <string name="browse_tasks_screen_title">Browse tasks</string>
+    <string name="browse_tasks_screen_title_my_tasks">My tasks</string>
+    <string name="browse_tasks_empty_state_message">Oops it seems you don\'t have any tasks to display!</string>
 
 
 </resources>

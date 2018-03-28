@@ -13,7 +13,7 @@ import com.example.redoy.aistasker.R;
 import com.example.redoy.aistasker.fragments.BrowseTaskListFragment;
 import com.example.redoy.aistasker.fragments.MessagesListFragment;
 import com.example.redoy.aistasker.fragments.MoreOptionsFragment;
-import com.example.redoy.aistasker.fragments.MyTaskListFragment;
+import com.example.redoy.aistasker.fragments.MyTaskFragment;
 import com.example.redoy.aistasker.fragments.PostTaskFragment;
 import com.example.redoy.aistasker.widget.BottomNavigationViewHelper;
 
@@ -53,7 +53,7 @@ public class MenuActivity extends AppCompatActivity {
                                 break;
                             }
                             case R.id.bottom_nav_bar_my_task: {
-                                mFragment = new MyTaskListFragment();
+                                mFragment = new MyTaskFragment();
                                 getSupportActionBar().setTitle(R.string.bottom_navigation_bar_my_tasks_label);
                                 break;
                             }
