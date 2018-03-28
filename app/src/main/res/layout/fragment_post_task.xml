@@ -20,7 +20,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/suggestions_asset_top_margin"
-            android:background="?attr/selectableItemBackgroundBorderless"
             app:layout_columnWeight="1.0">
 
             <ImageView
@@ -44,7 +43,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/suggestions_asset_top_margin"
-            android:background="?attr/selectableItemBackgroundBorderless"
             app:layout_columnWeight="1.0">
 
             <ImageView
@@ -68,7 +66,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/suggestions_asset_top_margin"
-            android:background="?attr/selectableItemBackgroundBorderless"
             app:layout_columnWeight="1.0">
 
             <ImageView
@@ -92,7 +89,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/suggestions_asset_top_margin"
-            android:background="?attr/selectableItemBackgroundBorderless"
             app:layout_columnWeight="1.0">
 
             <ImageView
@@ -116,7 +112,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/suggestions_asset_top_margin"
-            android:background="?attr/selectableItemBackgroundBorderless"
             app:layout_columnWeight="1.0">
 
             <ImageView
@@ -140,7 +135,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/suggestions_asset_top_margin"
-            android:background="?attr/selectableItemBackgroundBorderless"
             app:layout_columnWeight="1.0">
 
             <ImageView
@@ -164,7 +158,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/suggestions_asset_top_margin"
-            android:background="?attr/selectableItemBackgroundBorderless"
             app:layout_columnWeight="1.0">
 
             <ImageView
@@ -188,7 +181,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/suggestions_asset_top_margin"
-            android:background="?attr/selectableItemBackgroundBorderless"
             app:layout_columnWeight="1.0">
 
             <ImageView
@@ -211,7 +203,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/suggestions_asset_top_margin"
-            android:background="?attr/selectableItemBackgroundBorderless"
             app:layout_columnWeight="1.0">
 
             <ImageView
@@ -234,7 +225,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/suggestions_asset_top_margin"
-            android:background="?attr/selectableItemBackgroundBorderless"
             app:layout_column="0"
             app:layout_columnSpan="1"
             app:layout_columnWeight="1.0">
@@ -259,7 +249,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/suggestions_asset_top_margin"
-            android:background="?attr/selectableItemBackgroundBorderless"
             app:layout_column="1"
             app:layout_columnSpan="1"
             app:layout_columnWeight="1.0">

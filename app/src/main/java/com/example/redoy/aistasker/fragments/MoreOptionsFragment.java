@@ -1,16 +1,23 @@
 package com.example.redoy.aistasker.fragments;
 
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.view.ViewGroup.LayoutParams;
+import android.widget.LinearLayout;
 
 import com.example.redoy.aistasker.R;
+import com.example.redoy.aistasker.activities.IntroductionActivity;
 import com.example.redoy.aistasker.widget.OptionListItem;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 /**
  * Created by Redoy on 3/26/2018.
@@ -25,6 +32,9 @@ public class MoreOptionsFragment extends Fragment {
     private OptionListItem optionListItemTwo;
     private OptionListItem optionListItemThree;
 
+
+    @BindView(R.id.layoutOptionsList)
+    LinearLayout linearLayout;
 
     class ClassForDashboardActivity implements View.OnClickListener {
         final MoreOptionsFragment moreOptionsFragment;
@@ -154,7 +164,20 @@ public class MoreOptionsFragment extends Fragment {
         }
 
         public void onClick(View view) {
-            //moreOptionsFragment.startActivity(HelpActivity.m4887a(this.f2603a.f2604a));
+            new AlertDialog.Builder(rootView.getContext())
+                    .setTitle("Log Out")
+                    .setMessage("Are you sure to Log Out?")
+                    .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            Intent intent = new Intent(rootView.getContext(), IntroductionActivity.class);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                            startActivity(intent);
+                        }
+
+                    })
+                    .setNegativeButton("No", null)
+                    .show();
         }
     }
 
@@ -163,8 +186,7 @@ public class MoreOptionsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         rootView = inflater.inflate(R.layout.fragment_more, container, false);
-        //ButterKnife.bind(this, rootView);
-
+        ButterKnife.bind(this, rootView);
         context = rootView.getContext();
 
         OptionListItem optionListItem1 = new OptionListItem(context, context.getString(R.string.dashboard_screen_title), new ClassForDashboardActivity(this));
@@ -182,18 +204,17 @@ public class MoreOptionsFragment extends Fragment {
         OptionListItem optionListItem8 = new OptionListItem(context, context.getString(R.string.more_options_logout_label), new ClassForLogOut(this));
 
 
-        LinearLayout linearLayout = rootView.findViewById(R.id.layoutOptionsList);
-        linearLayout.addView(optionListItem1.view, new LayoutParams(-1, -2));
-        linearLayout.addView(optionListItem2.view, new LayoutParams(-1, -2));
-        linearLayout.addView(optionListItem3.view, new LayoutParams(-1, -2));
-        linearLayout.addView(optionListItem4.view, new LayoutParams(-1, -2));
-        linearLayout.addView(optionListItemOne.view, new LayoutParams(-1, -2));
-        linearLayout.addView(optionListItemTwo.view, new LayoutParams(-1, -2));
-        linearLayout.addView(optionListItem5.view, new LayoutParams(-1, -2));
-        linearLayout.addView(optionListItem6.view, new LayoutParams(-1, -2));
-        linearLayout.addView(optionListItem7.view, new LayoutParams(-1, -2));
-        linearLayout.addView(optionListItemThree.view, new LayoutParams(-1, -2));
-        linearLayout.addView(optionListItem8.view, new LayoutParams(-1, -2));
+        linearLayout.addView(optionListItem1.view, new LayoutParams(LayoutParams.MATCH_PARENT, 150));
+        linearLayout.addView(optionListItem2.view, new LayoutParams(LayoutParams.MATCH_PARENT, 150));
+        linearLayout.addView(optionListItem3.view, new LayoutParams(LayoutParams.MATCH_PARENT, 150));
+        linearLayout.addView(optionListItem4.view, new LayoutParams(LayoutParams.MATCH_PARENT, 150));
+        linearLayout.addView(optionListItemOne.view, new LayoutParams(LayoutParams.MATCH_PARENT, 150));
+        linearLayout.addView(optionListItemTwo.view, new LayoutParams(LayoutParams.MATCH_PARENT, 150));
+        linearLayout.addView(optionListItem5.view, new LayoutParams(LayoutParams.MATCH_PARENT, 150));
+        linearLayout.addView(optionListItem6.view, new LayoutParams(LayoutParams.MATCH_PARENT, 150));
+        linearLayout.addView(optionListItem7.view, new LayoutParams(LayoutParams.MATCH_PARENT, 150));
+        linearLayout.addView(optionListItemThree.view, new LayoutParams(LayoutParams.MATCH_PARENT, 150));
+        linearLayout.addView(optionListItem8.view, new LayoutParams(LayoutParams.MATCH_PARENT, 150));
 
         /*linearLayout.addView(optionListItem1.view, new LayoutParams(-1, -2));
         linearLayout.addView(optionListItem2.view, new LayoutParams(-1, -2));

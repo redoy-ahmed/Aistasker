@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -15,6 +16,9 @@ import com.example.redoy.aistasker.models.LogInResponse;
 import com.example.redoy.aistasker.presenter.LogInPresenter;
 import com.example.redoy.aistasker.services.AirTaskerService;
 import com.example.redoy.aistasker.widget.ConnectivityReceiver;
+import com.facebook.CallbackManager;
+import com.facebook.FacebookSdk;
+import com.facebook.login.widget.LoginButton;
 
 import javax.inject.Inject;
 
@@ -30,12 +34,24 @@ public class LogInActivity extends AppCompatActivity implements LogInViewInterfa
 
     @BindView(R.id.login_button)
     Button mButtonLogIn;
+
+    @BindView(R.id.login_with_facebook_button)
+    LoginButton loginButton;
+
     private ProgressDialog mDialog;
+    private CallbackManager callbackManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        FacebookSdk.sdkInitialize(getApplicationContext());
         setContentView(R.layout.activity_log_in);
+
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        callbackManager = CallbackManager.Factory.create();
+
         resolveDependency();
         ButterKnife.bind(this);
 
@@ -101,5 +117,18 @@ public class LogInActivity extends AppCompatActivity implements LogInViewInterfa
     private boolean checkConnection() {
         boolean isConnected = ConnectivityReceiver.isConnected();
         return isConnected;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem menuItem) {
+        switch (menuItem.getItemId()) {
+            case android.R.id.home: {
+                Intent intent = new Intent(getApplicationContext(), IntroductionActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+                return true;
+            }
+        }
+        return (super.onOptionsItemSelected(menuItem));
     }
 }

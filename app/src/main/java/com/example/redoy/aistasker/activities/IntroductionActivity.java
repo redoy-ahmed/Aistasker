@@ -30,6 +30,7 @@ public class IntroductionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_introduction);
         ButterKnife.bind(this);
+        getSupportActionBar().hide();
 
         mButtonSignUp.setOnClickListener(new View.OnClickListener() {
             @Override

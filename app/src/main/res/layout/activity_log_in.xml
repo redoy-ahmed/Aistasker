@@ -16,11 +16,14 @@
 
         <requestFocus />
 
-        <Button
-            android:id="@+id/sign_up_login_button_facebook"
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_with_facebook_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/medium" />
+            android:layout_centerInParent="true"
+            android:background="@drawable/rounded_button_for_facebook"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -45,6 +48,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/large"
+            android:background="@drawable/rounded_edittext_background"
             android:hint="@string/sign_up_login_hint_email"
             android:imeOptions="actionNone|actionSearch|actionSend|actionNext|actionDone|actionPrevious"
             android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone|time"
@@ -55,6 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/large"
+            android:background="@drawable/rounded_edittext_background"
             android:hint="@string/sign_up_login_hint_password"
             android:imeOptions="actionGo|actionSearch|actionSend|actionNext|actionDone|actionPrevious"
             android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone"
@@ -66,7 +71,9 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/medium"
             android:layout_marginTop="@dimen/large"
-            android:text="@string/sign_up_login_main_button_label_login" />
+            android:background="@drawable/rounded_button_green"
+            android:text="@string/sign_up_login_main_button_label_login"
+            android:textColor="@color/white" />
 
         <TextView
             android:id="@+id/sign_up_login_text_view_forgot_password_button"

@@ -43,9 +43,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/medium"
         android:layout_marginLeft="@dimen/large"
         android:layout_marginRight="@dimen/large"
-        android:layout_marginBottom="@dimen/medium"
         android:orientation="horizontal">
 
         <Button
@@ -54,6 +54,8 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/medium"
             android:layout_weight="1.0"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_button_green"
             android:text="@string/introduction_screen_sign_up_button" />
 
         <Button
@@ -61,6 +63,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
+            android:textColor="@color/airBlue"
+            android:background="@drawable/rounded_button_normal"
             android:text="@string/introduction_screen_login_button" />
     </LinearLayout>
 </RelativeLayout>

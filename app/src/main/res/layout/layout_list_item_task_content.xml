@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/medium"
+        android:paddingLeft="@dimen/large"
+        android:paddingRight="@dimen/large"
+        android:paddingTop="@dimen/large">
+
+        <TextView
+            android:id="@+id/list_item_task_text_view_task_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/medium"
+            android:ellipsize="end"
+            android:maxLines="2" />
+
+        <TextView
+            android:id="@+id/list_item_task_text_view_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_location_pin_14dp"
+            android:drawablePadding="@dimen/small"
+            android:drawableStart="@drawable/ic_location_pin_14dp"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/list_item_task_text_view_deadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small"
+            android:drawableLeft="@drawable/ic_calendar_14dp"
+            android:drawablePadding="@dimen/small"
+            android:drawableStart="@drawable/ic_calendar_14dp"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/list_item_task_text_view_requirements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small"
+            android:drawableLeft="@drawable/ic_shield_14dp"
+            android:drawablePadding="@dimen/small"
+            android:drawableStart="@drawable/ic_shield_14dp"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium"
+            android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/list_item_task_state_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/medium"
+                android:layout_marginRight="@dimen/medium" />
+
+            <TextView
+                android:id="@+id/list_item_task_text_view_additional_information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/large">
+
+        <TextView
+            android:id="@+id/list_item_task_text_view_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/list_item_task_avatar_widget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:src="@android:drawable/sym_contact_card" />
+    </LinearLayout>
+</LinearLayout>

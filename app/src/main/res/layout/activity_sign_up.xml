@@ -16,11 +16,14 @@
 
         <requestFocus />
 
-        <Button
-            android:id="@+id/sign_up_login_button_facebook"
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/medium" />
+            android:layout_centerInParent="true"
+            android:background="@drawable/rounded_button_for_facebook"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -37,31 +40,32 @@
                 android:layout_weight="1.0"
                 android:gravity="center"
                 android:text="@string/sign_up_login_separator_or" />
-
         </LinearLayout>
 
         <EditText
-            android:id="@+id/sign_up_login_edit_text_widget_email"
+            android:id="@+id/sign_up_edit_text_widget_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/large"
+            android:background="@drawable/rounded_edittext_background"
             android:hint="@string/sign_up_login_hint_email"
             android:imeOptions="actionNone|actionSearch|actionSend|actionNext|actionDone|actionPrevious"
             android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone|time"
             android:padding="@dimen/edit_text_padding_login_screen_only" />
 
         <EditText
-            android:id="@+id/sign_up_login_edit_text_widget_password"
+            android:id="@+id/sign_up_edit_text_widget_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/large"
+            android:background="@drawable/rounded_edittext_background"
             android:hint="@string/sign_up_login_hint_password"
             android:imeOptions="actionGo|actionSearch|actionSend|actionNext|actionDone|actionPrevious"
             android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone"
             android:padding="@dimen/edit_text_padding_login_screen_only" />
 
         <TextView
-            android:id="@+id/sign_up_login_text_view_region_label"
+            android:id="@+id/sign_up_text_view_region_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="@dimen/large"
@@ -69,10 +73,12 @@
             android:textColor="@color/grey4" />
 
         <Spinner
-            android:id="@+id/sign_up_login_drop_down_region_selection"
-            android:layout_width="match_parent"
+            android:id="@+id/sign_up_drop_down_region_selection"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/medium" />
+            android:layout_marginTop="@dimen/medium"
+            android:background="@drawable/rounded_edittext_background"
+            android:prompt="@string/country_prompt" />
 
         <Button
             android:id="@+id/sign_up_button"
@@ -80,13 +86,15 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/medium"
             android:layout_marginTop="@dimen/large"
+            android:background="@drawable/rounded_button_green"
             android:onClick="SignUpButtonHandler"
-            android:text="@string/sign_up_login_main_button_label_sign_up" />
+            android:text="@string/sign_up_login_main_button_label_sign_up"
+            android:textColor="@color/white" />
 
         <TextView
-            android:id="@+id/sign_up_login_text_view_terms_and_conditions"
+            android:id="@+id/sign_up_text_view_terms_and_conditions"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/height_for_spinner"
             android:gravity="center|bottom"
             android:text="@string/sign_up_login_paragraph_terms_and_conditions"
             android:textColor="@color/grey5"
