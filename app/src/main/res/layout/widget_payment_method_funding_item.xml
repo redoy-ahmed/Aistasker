@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/payment_method_funding_item_image_view_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="0x0"
+        android:paddingBottom="@dimen/very_large"
+        android:paddingLeft="@dimen/large"
+        android:paddingRight="@dimen/large"
+        android:paddingTop="@dimen/very_large"
+        android:src="@drawable/ic_airtasker_card" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/payment_method_funding_item_image_view_icon"
+        android:layout_toRightOf="@+id/payment_method_funding_item_image_view_icon"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/payment_method_funding_item_text_view_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/small"
+            android:textAllCaps="true"
+            android:textColor="@color/grey4" />
+
+        <TextView
+            android:id="@+id/payment_method_funding_item_text_view_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/payment_method_funding_item_text_view_name" />
+
+        <TextView
+            android:id="@+id/payment_method_funding_item_text_view_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/payment_method_funding_item_text_view_description"
+            android:layout_toRightOf="@+id/payment_method_funding_item_text_view_description"
+            android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:paddingEnd="@dimen/large"
+            android:paddingLeft="@dimen/small"
+            android:paddingRight="@dimen/large"
+            android:paddingStart="@dimen/small"
+            android:textColor="@color/grey4" />
+
+        <TextView
+            android:id="@+id/payment_method_funding_item_text_view_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/payment_method_funding_item_text_view_description"
+            android:layout_alignTop="@+id/payment_method_funding_item_text_view_description"
+            android:layout_toEndOf="@+id/payment_method_funding_item_text_view_description"
+            android:layout_toRightOf="@+id/payment_method_funding_item_text_view_description"
+            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:paddingEnd="@dimen/medium"
+            android:paddingLeft="@dimen/medium"
+            android:paddingRight="@dimen/medium"
+            android:paddingStart="@dimen/medium"
+            android:text="@string/payment_method_widget_update_text"
+            android:textColor="@color/airBlue"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/payment_method_funding_item_image_view_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/payment_method_funding_item_text_view_description"
+            android:layout_alignTop="@+id/payment_method_funding_item_text_view_description"
+            android:layout_toEndOf="@+id/payment_method_funding_item_text_view_description"
+            android:layout_toRightOf="@+id/payment_method_funding_item_text_view_description"
+            android:paddingEnd="@dimen/medium"
+            android:paddingLeft="@dimen/medium"
+            android:paddingRight="@dimen/medium"
+            android:paddingStart="@dimen/medium"
+            android:src="@drawable/ic_info_filled_18dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignBottom="@+id/payment_method_funding_item_image_view_icon"
+        android:layout_toEndOf="@+id/payment_method_funding_item_image_view_icon"
+        android:layout_toRightOf="@+id/payment_method_funding_item_image_view_icon" />
+</RelativeLayout>

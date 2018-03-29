@@ -44,7 +44,18 @@
         <activity
             android:name=".activities.TaskAlertsActivity"
             android:label="Task alerts" />
-        <activity android:name=".activities.NotificationsActivity"></activity>
+        <activity
+            android:name=".activities.NotificationsActivity"
+            android:label="Notifications" />
+        <activity
+            android:name=".activities.ReviewListActivity"
+            android:label="Review" />
+        <activity
+            android:name=".activities.PaymentSettingsActivity"
+            android:label="Payment Settings" />
+        <activity android:name=".activities.PaymentHistoryActivity" />
+        <activity android:name=".activities.ProfileActivity" />
+        <activity android:name=".activities.DashboardActivity"></activity>
     </application>
 
 </manifest>

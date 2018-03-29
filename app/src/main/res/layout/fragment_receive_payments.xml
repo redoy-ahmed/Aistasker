@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/payment_method_funding_item_image_view_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/very_large"
+            android:paddingLeft="@dimen/large"
+            android:paddingRight="@dimen/large"
+            android:paddingTop="@dimen/very_large"
+            app:srcCompat="@drawable/ic_location_pin_14dp" />
+
+        <TextView
+            android:id="@+id/receive_payment_add_billing_address_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/payment_method_funding_item_image_view_icon"
+            android:paddingBottom="@dimen/very_large"
+            android:paddingRight="@dimen/large"
+            android:paddingTop="@dimen/very_large"
+            android:text="Add billing address"
+            android:textAllCaps="true"
+            android:textColor="@color/grey4" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignBottom="@+id/payment_method_funding_item_image_view_icon"
+            android:layout_toEndOf="@+id/payment_method_funding_item_image_view_icon"
+            android:layout_toRightOf="@+id/payment_method_funding_item_image_view_icon"
+            android:background="@color/grey3" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/one"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/payment_method_payment_item_image_view_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/very_large"
+            android:paddingLeft="@dimen/large"
+            android:paddingRight="@dimen/large"
+            android:paddingTop="@dimen/very_large"
+            app:srcCompat="@drawable/ic_plus_reverse_18dp" />
+
+        <TextView
+            android:id="@+id/receive_payment_add_bank_account_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/payment_method_payment_item_image_view_icon"
+            android:paddingBottom="@dimen/very_large"
+            android:paddingRight="@dimen/large"
+            android:paddingTop="@dimen/very_large"
+            android:text="Add a bank account"
+            android:textAllCaps="true"
+            android:textColor="@color/grey4" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignBottom="@+id/payment_method_payment_item_image_view_icon"
+            android:layout_toEndOf="@+id/payment_method_payment_item_image_view_icon"
+            android:layout_toRightOf="@+id/payment_method_payment_item_image_view_icon"
+            android:background="@color/grey3" />
+    </RelativeLayout>
+
+</RelativeLayout>

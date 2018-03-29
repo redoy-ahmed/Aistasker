@@ -165,5 +165,15 @@
     <string name="task_alerts_empty_state">Be notified when there\'s a task that you\'re interested in. Add keywords such as moving or clean.</string>
     <string name="notifications_screen_empty_state">This is where we\'ll let you know about tasks, comments and other stuff. How about posting a task or finding one to do through browse tasks?</string>
 
+    <string name="reviews_screen_empty_state">You haven\'t got any reviews to write… Good job!</string>
+    <string name="payment_settings_tab_title_make_payments">Make payments</string>
+    <string name="payment_settings_tab_title_receive_payments">Receive payments</string>
+    <string name="payment_method_widget_update_text">(Update)</string>
+
+    <string name="payment_settings_paypal_account">Paypal details</string>
+    <string name="payment_settings_add_paypal_account">Add a Paypal account</string>
+
+    <string name="payment_method_widget_task_credit_label">Task credits</string>
+    <string name="payment_method_widget_task_credit_balance_label">Balance: %1$s</string>
 
 </resources>

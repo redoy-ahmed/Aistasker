@@ -13,10 +13,15 @@ import android.view.ViewGroup.LayoutParams;
 import android.widget.LinearLayout;
 
 import com.example.redoy.aistasker.R;
+import com.example.redoy.aistasker.activities.DashboardActivity;
 import com.example.redoy.aistasker.activities.HelpActivity;
 import com.example.redoy.aistasker.activities.IntroductionActivity;
 import com.example.redoy.aistasker.activities.NotificationsActivity;
+import com.example.redoy.aistasker.activities.PaymentHistoryActivity;
+import com.example.redoy.aistasker.activities.PaymentSettingsActivity;
+import com.example.redoy.aistasker.activities.ProfileActivity;
 import com.example.redoy.aistasker.activities.ReferralsActivity;
+import com.example.redoy.aistasker.activities.ReviewListActivity;
 import com.example.redoy.aistasker.activities.SettingsActivity;
 import com.example.redoy.aistasker.activities.TaskAlertsActivity;
 import com.example.redoy.aistasker.widget.OptionListItem;
@@ -49,7 +54,7 @@ public class MoreOptionsFragment extends Fragment {
         }
 
         public void onClick(View view) {
-            //moreOptionsFragment.startActivity(DashboardActivity.m3795a(this.f2595a.f2604a));
+            moreOptionsFragment.startActivity(new Intent(moreOptionsFragment.getActivity(), DashboardActivity.class));
         }
     }
 
@@ -61,7 +66,7 @@ public class MoreOptionsFragment extends Fragment {
         }
 
         public void onClick(View view) {
-            //moreOptionsFragment.startActivity(ProfileActivity.m4960a(this.f2596a.f2604a, this.f2596a.f.m1237a().account.id));
+            moreOptionsFragment.startActivity(new Intent(moreOptionsFragment.getActivity(), ProfileActivity.class));
         }
     }
 
@@ -73,7 +78,7 @@ public class MoreOptionsFragment extends Fragment {
         }
 
         public void onClick(View view) {
-            //moreOptionsFragment.startActivity(PaymentHistoryActivity.m4043a(this.f2597a.f2604a));
+            moreOptionsFragment.startActivity(new Intent(moreOptionsFragment.getActivity(), PaymentHistoryActivity.class));
         }
     }
 
@@ -85,7 +90,7 @@ public class MoreOptionsFragment extends Fragment {
         }
 
         public void onClick(View view) {
-            //moreOptionsFragment.startActivity(PaymentSettingsActivity.m5253a(this.f2598a.f2604a, SelectedTab.MAKE_PAYMENTS_TAB));
+            moreOptionsFragment.startActivity(new Intent(moreOptionsFragment.getActivity(), PaymentSettingsActivity.class));
         }
     }
 
@@ -97,7 +102,7 @@ public class MoreOptionsFragment extends Fragment {
         }
 
         public void onClick(View view) {
-            //moreOptionsFragment.startActivity(ReviewListActivity.m4290a(this.f2599a.f2604a));
+            moreOptionsFragment.startActivity(new Intent(moreOptionsFragment.getActivity(), ReviewListActivity.class));
         }
     }
 

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:paddingTop="@dimen/large">
+
+    <ImageView
+        android:id="@+id/list_item_review_avatar_widget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/medium"
+        android:paddingLeft="@dimen/medium"
+        android:paddingRight="@dimen/medium"
+        android:src="@drawable/quiz"
+        android:paddingStart="@dimen/medium" />
+
+    <TextView
+        android:id="@+id/list_item_review_text_view_task_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/list_item_review_avatar_widget"
+        android:layout_toRightOf="@+id/list_item_review_avatar_widget"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingEnd="@dimen/medium"
+        android:paddingLeft="@dimen/small"
+        android:paddingRight="@dimen/medium"
+        android:paddingStart="@dimen/small"
+        android:textColor="@color/grey5" />
+
+    <RatingBar
+        android:id="@+id/list_item_review_rating_bar"
+        android:layout_below="@+id/list_item_review_text_view_task_title"
+        android:layout_marginEnd="@dimen/medium"
+        android:layout_marginLeft="@dimen/small"
+        android:layout_marginRight="@dimen/medium"
+        android:layout_marginStart="@dimen/small"
+        android:layout_marginTop="@dimen/small"
+        android:layout_toEndOf="@+id/list_item_review_avatar_widget"
+        android:layout_toRightOf="@+id/list_item_review_avatar_widget"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignLeft="@+id/list_item_review_rating_bar"
+        android:layout_alignStart="@+id/list_item_review_rating_bar"
+        android:layout_below="@+id/list_item_review_rating_bar"
+        android:layout_marginEnd="@dimen/tiny"
+        android:layout_marginRight="@dimen/tiny"
+        android:layout_marginTop="@dimen/medium" />
+</RelativeLayout>
