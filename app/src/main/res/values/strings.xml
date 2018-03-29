@@ -106,5 +106,47 @@
     <string name="browse_tasks_chip_task_location">50km, sydney NSW...</string>
     <string name="browse_tasks_chip_task_price_any">Any price</string>
 
+    <string name="post_task_segment_title_details">Details</string>
+    <string name="post_task_segment_title_location">Due date</string>
+    <string name="post_task_segment_title_price">Budget</string>
+    <string name="post_task_details">Post task details</string>
+    <string name="post_task_location">Post task location</string>
+    <string name="post_task_price">Post task price</string>
+
+    <string name="post_task_details_button_continue">Continue</string>
+    <string name="post_task_details_task_location_label">Task location (%1$s)</string>
+    <string name="post_task_details_can_be_completed_online_label">Can this task be completed online?</string>
+    <string name="post_task_details_add_must_haves">Add must-haves</string>
+    <string name="post_task_details_description_label">Describe your task</string>
+    <string name="post_task_details_title_label">Task title</string>
+    <string name="post_task_details_title_hint">e.g. Clean my 2 bedroom apartment</string>
+
+    <string name="yes_no_radio_group_key_no">NO</string>
+    <string name="yes_no_radio_group_key_yes">YES</string>
+    <string name="yes_no_widget_yes_label">Yes</string>
+    <string name="yes_no_widget_no_label">No</string>
+
+    <string name="post_task_schedule_due_date_label">Due date</string>
+    <string name="post_task_schedule_error_select_date">Please select a date</string>
+    <string name="post_task_schedule_error_select_location">Please select a valid location</string>
+    <string name="post_task_schedule_error_selected_date_pasted">Please select a date in the future</string>
+    <string name="post_task_schedule_select_due_date">Select a date</string>
+
+    <string name="messages_list_empty_state_message">You haven\'t got any messages yet - assign a task or get assigned to chat privately!</string>
+
+    <string name="post_task_price_estimated_budget_label">Estimated budget:</string>
+    <string name="post_task_price_hours_label">Hours</string>
+    <string name="post_task_price_invalid_price_text">Total allowed price is %1$s - %2$s</string>
+    <string name="post_task_price_invalid_rate_hours_missing_text">Please insert estimated hours!</string>
+    <string name="post_task_price_per_tasker_label">per Tasker</string>
+    <string name="post_task_price_price_label">What\'s your budget?</string>
+    <string name="post_task_price_rate_label">Price per hour</string>
+    <string name="post_task_price_state_label_hourly_rate">Hourly rate</string>
+    <string name="post_task_price_state_label_total">Total</string>
+    <string name="post_task_price_taskers_label">How many Taskers do you need?</string>
+
+    <string name="private_conversation_messages_closed_message">Task completed. Private messages closed</string>
+    <string name="list_item_private_conversation_time">Time</string>
+
 
 </resources>

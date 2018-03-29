@@ -87,11 +87,11 @@ public class BrowseTaskListFragment extends Fragment {
     private ArrayList<TaskItem> getAllItemList() {
 
         ArrayList<TaskItem> allItems = new ArrayList<>();
-        allItems.add(new TaskItem("Task 1", "Australia", "Saturday, Mar 31, 2018", "Clean my house", "Drafted", "additional information"));
-        allItems.add(new TaskItem("Task 2", "Australia", "Saturday, Mar 31, 2018", "clean my clothes", "Drafted", "additional information"));
-        allItems.add(new TaskItem("Task 3", "Australia", "Saturday, Mar 31, 2018", "clean my clothes", "Drafted", "additional information"));
-        allItems.add(new TaskItem("Task 4", "Australia", "Saturday, Mar 31, 2018", "clean my clothes", "Drafted", "additional information"));
-        allItems.add(new TaskItem("Task 5", "Australia", "Saturday, Mar 31, 2018", "clean my clothes", "Drafted", "additional information"));
+        allItems.add(new TaskItem("Task 1", "Australia", "Saturday, Mar 31, 2018", "Clean my house", "Drafted", "additional information","A$250"));
+        allItems.add(new TaskItem("Task 2", "Australia", "Saturday, Mar 31, 2018", "clean my clothes", "Drafted", "additional information","A$250"));
+        allItems.add(new TaskItem("Task 3", "Australia", "Saturday, Mar 31, 2018", "clean my clothes", "Drafted", "additional information","A$270"));
+        allItems.add(new TaskItem("Task 4", "Australia", "Saturday, Mar 31, 2018", "clean my clothes", "Drafted", "additional information","A$280"));
+        allItems.add(new TaskItem("Task 5", "Australia", "Saturday, Mar 31, 2018", "clean my clothes", "Drafted", "additional information","A$300"));
 
         return allItems;
     }

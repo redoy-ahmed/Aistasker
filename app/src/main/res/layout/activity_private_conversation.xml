@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/airtasker_application_background">
+
+    <ListView
+        android:id="@+id/private_conversation_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/private_conversation_footer_layout"
+        android:scrollbarStyle="outsideOverlay"
+        android:stackFromBottom="true" />
+
+    <RelativeLayout
+        android:id="@+id/private_conversation_footer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/small">
+
+        <TextView
+            android:id="@+id/private_conversation_closed_message_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_page_standard"
+            android:layout_marginRight="@dimen/margin_page_standard"
+            android:layout_marginTop="@dimen/small"
+            android:background="@drawable/comments_closed"
+            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:padding="@dimen/very_large"
+            android:text="@string/private_conversation_messages_closed_message"
+            android:textColor="@color/airtasker_primary_color"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</RelativeLayout>

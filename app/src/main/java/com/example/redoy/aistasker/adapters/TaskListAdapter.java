@@ -41,6 +41,7 @@ public class TaskListAdapter extends RecyclerView.Adapter<TaskListAdapter.Recycl
         holder.mTaskRequirementsTextView.setText(itemList.get(position).getTaskRequirements());
         holder.mTaskStateTextView.setText(itemList.get(position).getTaskState());
         holder.mTaskAdditionalInformationTextView.setText(itemList.get(position).getAdditionalInformation());
+        holder.mTaskPriceTextView.setText(itemList.get(position).getPrice());
     }
 
     @Override
@@ -67,6 +68,9 @@ public class TaskListAdapter extends RecyclerView.Adapter<TaskListAdapter.Recycl
 
         @BindView(R.id.list_item_task_text_view_additional_information)
         public TextView mTaskAdditionalInformationTextView;
+
+        @BindView(R.id.list_item_task_text_view_price)
+        public TextView mTaskPriceTextView;
 
 
         public RecyclerViewHolderTaskList(final View itemView) {

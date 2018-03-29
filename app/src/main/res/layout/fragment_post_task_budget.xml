@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/large"
+        android:layout_marginRight="@dimen/large"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/post_task_price_state_selector_widget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/large"
+                android:layout_marginRight="@dimen/large"
+                android:layout_marginTop="@dimen/large" />
+
+            <RelativeLayout
+                android:id="@+id/post_task_price_layout_total_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/large">
+
+                <TextView
+                    android:id="@+id/post_task_price_text_view_price_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/post_task_price_price_label"
+                    android:textColor="@color/grey4" />
+
+                <EditText
+                    android:id="@+id/post_task_price_edit_text_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/post_task_price_text_view_price_label"
+                    android:layout_marginTop="@dimen/medium"
+                    android:imeOptions="actionGo|actionSearch|actionSend|actionNext|actionDone|actionPrevious"
+                    android:inputType="number|numberSigned|numberDecimal|numberPassword|phone"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/large" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/post_task_price_layout_hourly_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/large"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <EditText
+                        android:id="@+id/post_task_price_edit_text_hours"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/post_task_price_text_view_hours_label"
+                        android:layout_marginTop="@dimen/medium"
+                        android:imeOptions="actionNone|actionSearch|actionSend|actionNext|actionDone|actionPrevious"
+                        android:inputType="number|numberSigned|numberDecimal|numberPassword|phone"
+                        android:maxLines="1" />
+
+                    <TextView
+                        android:id="@+id/post_task_price_text_view_hours_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/post_task_price_hours_label"
+                        android:textColor="@color/grey4" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/large"
+                    android:layout_marginStart="@dimen/large"
+                    android:layout_weight="1.0">
+
+                    <EditText
+                        android:id="@+id/post_task_price_edit_text_hourly_rate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/post_task_price_text_view_hourly_rate_label"
+                        android:layout_marginTop="@dimen/medium"
+                        android:inputType="number|numberSigned|numberDecimal|numberPassword|phone"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/large" />
+
+                    <TextView
+                        android:id="@+id/post_task_price_text_view_hourly_rate_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/post_task_price_edit_text_hourly_rate"
+                        android:layout_toRightOf="@+id/post_task_price_edit_text_hourly_rate"
+                        android:text="@string/post_task_price_rate_label"
+                        android:textColor="@color/grey4" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/post_task_price_container_workers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/post_task_price_text_view_workers_count"
+                android:layout_toStartOf="@+id/post_task_price_text_view_workers_count"
+                android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+                android:lines="2"
+                android:maxLines="2"
+                android:text="@string/post_task_price_taskers_label"
+                android:textColor="@color/grey4" />
+
+            <TextView
+                android:id="@+id/post_task_price_text_view_workers_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/medium"
+                android:layout_marginLeft="@dimen/large"
+                android:layout_marginRight="@dimen/medium"
+                android:layout_marginStart="@dimen/large"
+                android:layout_toLeftOf="@+id/post_task_price_text_view_decrease_worker"
+                android:layout_toStartOf="@+id/post_task_price_text_view_decrease_worker"
+                android:ems="2"
+                android:textColor="@color/grey5"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/post_task_price_text_view_decrease_worker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="-2dp"
+                android:layout_marginRight="-2dp"
+                android:layout_toLeftOf="@+id/post_task_price_text_view_increase_worker"
+                android:layout_toStartOf="@+id/post_task_price_text_view_increase_worker"
+                android:background="@drawable/rectangle_round_corners_left"
+                android:paddingBottom="@dimen/medium"
+                android:paddingLeft="@dimen/large"
+                android:paddingRight="@dimen/large"
+                android:paddingTop="@dimen/medium"
+                android:text="-"
+                android:textColor="@drawable/text_selector_grey_white_selector"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/post_task_price_text_view_increase_worker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/rectangle_round_corners_right"
+                android:paddingBottom="@dimen/medium"
+                android:paddingLeft="@dimen/large"
+                android:paddingRight="@dimen/large"
+                android:paddingTop="@dimen/medium"
+                android:text="+"
+                android:textColor="@drawable/text_selector_grey_white_selector"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="@dimen/large"
+            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/post_task_price_estimated_budget_label"
+                android:textColor="@color/grey4" />
+
+            <TextView
+                android:id="@+id/post_task_price_text_view_estimated_budget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/small"
+                android:layout_marginStart="@dimen/small"
+                android:textColor="@color/grey4" />
+
+            <TextView
+                android:id="@+id/post_task_price_text_view_estimated_budget_per_runner_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/small"
+                android:layout_marginStart="@dimen/small"
+                android:text="@string/post_task_price_per_tasker_label"
+                android:textColor="@color/grey4" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

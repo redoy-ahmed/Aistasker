@@ -87,6 +87,7 @@
         <TextView
             android:id="@+id/list_item_task_text_view_price"
             android:layout_width="wrap_content"
+            android:text="A$50"
             android:layout_height="wrap_content" />
 
         <ImageView

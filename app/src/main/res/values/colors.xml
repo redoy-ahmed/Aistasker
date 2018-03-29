@@ -42,5 +42,7 @@
     <color name="default_blue_grey_selector">@color/blue100</color>
 
     <color name="transparent_37">#5e000000</color>
+    <color name="pattens_blue_old">#caeaff</color>
+    <color name="pale_cerulean_old">#5ba0de</color>
 
 </resources>

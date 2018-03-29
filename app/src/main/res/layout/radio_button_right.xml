@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="-1dp"
+    android:layout_marginStart="-1dp"
+    android:background="@drawable/radio_button_round_corners_right_selector"
+    android:paddingBottom="11dp"
+    android:paddingLeft="@dimen/large"
+    android:paddingRight="@dimen/large"
+    android:paddingTop="11dp"
+    android:tag="@string/yes_no_radio_group_key_no"
+    android:text="@string/yes_no_widget_no_label"
+    android:textColor="@color/white" />

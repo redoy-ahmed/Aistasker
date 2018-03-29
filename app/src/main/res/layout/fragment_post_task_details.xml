@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/large"
+        android:layout_marginRight="@dimen/large"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large"
+            android:text="@string/post_task_details_title_label"
+            android:textColor="@color/grey4" />
+
+        <EditText
+            android:id="@+id/post_task_details_edit_text_widget_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-16dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:hint="@string/post_task_details_title_hint"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/post_task_details_description_label"
+            android:textColor="@color/grey4" />
+
+        <EditText
+            android:id="@+id/post_task_details_edit_text_widget_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-16dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:minLines="5"
+            android:paddingBottom="@dimen/medium" />
+
+        <TextView
+            android:id="@+id/post_task_details_text_view_must_haves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_plus_reverse_18dp"
+            android:drawablePadding="@dimen/medium"
+            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:paddingBottom="@dimen/medium"
+            android:paddingTop="@dimen/medium"
+            android:text="@string/post_task_details_add_must_haves"
+            android:textColor="@color/airBlue" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/medium">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+                android:layout_weight="1.0"
+                android:text="@string/post_task_details_can_be_completed_online_label"
+                android:textColor="@color/grey4" />
+
+            <com.example.redoy.aistasker.widget.YesNoWidget
+                android:id="@+id/post_task_details_yes_no_widget_online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/post_task_details_layout_location_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/post_task_details_text_view_location_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:text="@string/post_task_details_task_location_label"
+                android:textColor="@color/grey4" />
+
+            <EditText
+                android:id="@+id/post_task_details_places_auto_complete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium"
+                android:imeOptions="actionGo|actionSearch|actionSend|actionNext|actionDone|actionPrevious" />
+
+            <Switch
+                android:id="@+id/post_task_details_location_selection_widget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium"
+                android:imeOptions="actionGo|actionSearch|actionSend|actionNext|actionDone|actionPrevious" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

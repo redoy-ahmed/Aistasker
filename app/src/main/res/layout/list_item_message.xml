@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/medium">
+
+    <ImageView
+        android:id="@+id/list_item_message_avatar_widget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/medium"
+        android:paddingLeft="@dimen/medium"
+        android:paddingRight="@dimen/medium"
+        android:paddingStart="@dimen/medium"
+        android:src="@drawable/quiz" />
+
+    <RelativeLayout
+        android:id="@+id/list_item_message_layout_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/list_item_message_avatar_widget"
+        android:layout_alignTop="@+id/list_item_message_avatar_widget"
+        android:layout_toEndOf="@+id/list_item_message_avatar_widget"
+        android:layout_toRightOf="@+id/list_item_message_avatar_widget"
+        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:orientation="horizontal"
+        android:padding="@dimen/medium">
+
+        <TextView
+            android:id="@+id/list_item_message_text_view_task_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/list_item_message_text_view_time"
+            android:layout_toStartOf="@+id/list_item_message_text_view_time"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="Cleaning Task"
+            android:textColor="@color/grey5" />
+
+        <TextView
+            android:id="@+id/list_item_message_text_view_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/list_item_message_text_view_task_title"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/medium"
+            android:layout_marginStart="@dimen/medium"
+            android:maxLines="1"
+            android:text="3:10 PM"
+            android:textColor="@color/grey4" />
+
+        <ImageView
+            android:id="@+id/list_item_message_image_view_new_message_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/list_item_message_text_view_message_preview"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/list_item_message_text_view_message_preview"
+            android:src="@drawable/circle_blue" />
+
+        <TextView
+            android:id="@+id/list_item_message_text_view_message_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_item_message_text_view_task_title"
+            android:layout_marginEnd="@dimen/medium"
+            android:layout_marginRight="@dimen/medium"
+            android:layout_marginTop="@dimen/small"
+            android:layout_toLeftOf="@+id/list_item_message_image_view_new_message_indicator"
+            android:layout_toStartOf="@+id/list_item_message_image_view_new_message_indicator"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Your cleaning task will expire today"
+            android:textColor="@color/grey4" />
+    </RelativeLayout>
+</RelativeLayout>

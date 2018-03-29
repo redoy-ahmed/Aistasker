@@ -7,7 +7,7 @@
     <dimen name="small">4dp</dimen>
     <dimen name="corner_radius">4dp</dimen>
     <dimen name="tiny">2dp</dimen>
-    <dimen name="edit_text_padding_login_screen_only">16dp</dimen>
+    <dimen name="edit_text_padding_login_screen_only">10dp</dimen>
     <dimen name="navigation_bar_height">60dp</dimen>
     <dimen name="suggestions_asset_top_margin">24dp</dimen>
     <dimen name="suggestions_asset_bottom_padding">24dp</dimen>
@@ -27,5 +27,7 @@
     <dimen name="height_for_spinner">40dp</dimen>
     <dimen name="chip_radius">32dp</dimen>
     <dimen name="chip_padding_left_right">12dp</dimen>
+
+    <dimen name="very_large">24dp</dimen>
 
 </resources>
