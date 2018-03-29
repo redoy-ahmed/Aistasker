@@ -33,7 +33,18 @@
             android:name=".activities.LogInActivity"
             android:label="Log In" />
         <activity android:name=".activities.PostTaskActivity" />
-        <activity android:name=".activities.PrivateConversationActivity"></activity>
+        <activity android:name=".activities.PrivateConversationActivity" />
+        <activity
+            android:name=".activities.ReferralsActivity"
+            android:label="Get Airtasker credit" />
+        <activity android:name=".activities.HelpActivity" />
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:label="Settings" />
+        <activity
+            android:name=".activities.TaskAlertsActivity"
+            android:label="Task alerts" />
+        <activity android:name=".activities.NotificationsActivity"></activity>
     </application>
 
 </manifest>

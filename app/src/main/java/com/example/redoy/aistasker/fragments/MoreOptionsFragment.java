@@ -13,7 +13,12 @@ import android.view.ViewGroup.LayoutParams;
 import android.widget.LinearLayout;
 
 import com.example.redoy.aistasker.R;
+import com.example.redoy.aistasker.activities.HelpActivity;
 import com.example.redoy.aistasker.activities.IntroductionActivity;
+import com.example.redoy.aistasker.activities.NotificationsActivity;
+import com.example.redoy.aistasker.activities.ReferralsActivity;
+import com.example.redoy.aistasker.activities.SettingsActivity;
+import com.example.redoy.aistasker.activities.TaskAlertsActivity;
 import com.example.redoy.aistasker.widget.OptionListItem;
 
 import butterknife.BindView;
@@ -60,10 +65,10 @@ public class MoreOptionsFragment extends Fragment {
         }
     }
 
-    class ClassFOrPaymentHistoryActivity implements View.OnClickListener {
+    class ClassForPaymentHistoryActivity implements View.OnClickListener {
         final MoreOptionsFragment moreOptionsFragment;
 
-        ClassFOrPaymentHistoryActivity(MoreOptionsFragment moreOptionsFragment) {
+        ClassForPaymentHistoryActivity(MoreOptionsFragment moreOptionsFragment) {
             this.moreOptionsFragment = moreOptionsFragment;
         }
 
@@ -104,7 +109,7 @@ public class MoreOptionsFragment extends Fragment {
         }
 
         public void onClick(View view) {
-            //moreOptionsFragment.startActivity(ClassForReferralsActivity.m4290a(this.f2599a.f2604a));
+            moreOptionsFragment.startActivity(new Intent(moreOptionsFragment.getActivity(), ReferralsActivity.class));
         }
     }
 
@@ -116,7 +121,7 @@ public class MoreOptionsFragment extends Fragment {
         }
 
         public void onClick(View view) {
-            //moreOptionsFragment.startActivity(NotificationsActivity.m5077a(this.f2600a.f2604a));
+            moreOptionsFragment.startActivity(new Intent(moreOptionsFragment.getActivity(), NotificationsActivity.class));
         }
     }
 
@@ -128,7 +133,7 @@ public class MoreOptionsFragment extends Fragment {
         }
 
         public void onClick(View view) {
-            //moreOptionsFragment.startActivity(TaskAlertsActivity.m4362a(this.f2601a.f2604a));
+            moreOptionsFragment.startActivity(new Intent(moreOptionsFragment.getActivity(), TaskAlertsActivity.class));
         }
     }
 
@@ -140,7 +145,7 @@ public class MoreOptionsFragment extends Fragment {
         }
 
         public void onClick(View view) {
-            //moreOptionsFragment.startActivity(new Intent(this.f2602a.f2604a, SettingsActivity.class));
+            moreOptionsFragment.startActivity(new Intent(moreOptionsFragment.getActivity(), SettingsActivity.class));
         }
     }
 
@@ -152,7 +157,7 @@ public class MoreOptionsFragment extends Fragment {
         }
 
         public void onClick(View view) {
-            //moreOptionsFragment.startActivity(HelpActivity.m4887a(this.f2603a.f2604a));
+            moreOptionsFragment.startActivity(new Intent(moreOptionsFragment.getActivity(), HelpActivity.class));
         }
     }
 
@@ -181,7 +186,6 @@ public class MoreOptionsFragment extends Fragment {
         }
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
@@ -191,7 +195,7 @@ public class MoreOptionsFragment extends Fragment {
 
         OptionListItem optionListItem1 = new OptionListItem(context, context.getString(R.string.dashboard_screen_title), new ClassForDashboardActivity(this));
         OptionListItem optionListItem2 = new OptionListItem(context, context.getString(R.string.more_options_profile_label), new ClassForProfileActivity(this));
-        OptionListItem optionListItem3 = new OptionListItem(context, context.getString(R.string.more_options_payment_history_label), new ClassFOrPaymentHistoryActivity(this));
+        OptionListItem optionListItem3 = new OptionListItem(context, context.getString(R.string.more_options_payment_history_label), new ClassForPaymentHistoryActivity(this));
         OptionListItem optionListItem4 = new OptionListItem(context, getString(R.string.more_options_payments), new ClassForPaymentSettingsActivity(this));
 
         optionListItemOne = new OptionListItem(context, context.getString(R.string.more_options_reviews_label), new ClassForReviewListActivity(this));

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:paddingTop="@dimen/large">
+
+    <ImageView
+        android:id="@+id/list_item_notification_avatar_widget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/medium"
+        android:paddingLeft="@dimen/medium"
+        android:paddingRight="@dimen/medium"
+        android:paddingStart="@dimen/medium"
+        android:src="@drawable/quiz" />
+
+    <TextView
+        android:id="@+id/notifications_list_item_content_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/list_item_notification_avatar_widget"
+        android:layout_toRightOf="@+id/list_item_notification_avatar_widget"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="bla bla"
+        android:paddingEnd="@dimen/medium"
+        android:paddingLeft="@dimen/small"
+        android:paddingRight="@dimen/medium"
+        android:paddingStart="@dimen/small"
+        android:textColor="@color/grey5" />
+
+    <TextView
+        android:id="@+id/notifications_list_item_date_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notifications_list_item_content_text_view"
+        android:layout_marginTop="@dimen/small"
+        android:layout_toEndOf="@+id/list_item_notification_avatar_widget"
+        android:layout_toRightOf="@+id/list_item_notification_avatar_widget"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="29-Mar-2018"
+        android:paddingEnd="@dimen/medium"
+        android:paddingLeft="@dimen/small"
+        android:paddingRight="@dimen/medium"
+        android:paddingStart="@dimen/small"
+        android:textColor="@color/grey4" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignLeft="@+id/notifications_list_item_date_text_view"
+        android:layout_alignStart="@+id/notifications_list_item_date_text_view"
+        android:layout_below="@+id/notifications_list_item_date_text_view"
+        android:layout_marginEnd="@dimen/tiny"
+        android:layout_marginLeft="@dimen/small"
+        android:layout_marginRight="@dimen/tiny"
+        android:layout_marginStart="@dimen/small"
+        android:layout_marginTop="@dimen/medium" />
+</RelativeLayout>

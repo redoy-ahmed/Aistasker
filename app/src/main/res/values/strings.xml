@@ -148,5 +148,22 @@
     <string name="private_conversation_messages_closed_message">Task completed. Private messages closed</string>
     <string name="list_item_private_conversation_time">Time</string>
 
+    <string name="referrals_refer_friends_to_airtasker_label">Refer friends to Airtasker</string>
+    <string name="referrals_more_information_label">More information</string>
+
+    <string name="help_screen_title">Help</string>
+    <string name="help_support_centre_label">Support centre</string>
+    <string name="help_terms_and_conditions_label">Terms and conditions</string>
+    <string name="help_insurance_label">Insurance</string>
+    <string name="help_privacy_label">Privacy policy</string>
+
+    <string name="edit_profile_screen_title">Edit account</string>
+    <string name="notifications_settings_screen_title">Notification settings</string>
+    <string name="change_password_screen_title">Change password</string>
+    <string name="add_mobile_number_screen_title">Mobile verification</string>
+
+    <string name="task_alerts_empty_state">Be notified when there\'s a task that you\'re interested in. Add keywords such as moving or clean.</string>
+    <string name="notifications_screen_empty_state">This is where we\'ll let you know about tasks, comments and other stuff. How about posting a task or finding one to do through browse tasks?</string>
+
 
 </resources>
