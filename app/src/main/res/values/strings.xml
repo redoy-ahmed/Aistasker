@@ -102,5 +102,9 @@
     <string name="browse_tasks_screen_title_my_tasks">My tasks</string>
     <string name="browse_tasks_empty_state_message">Oops it seems you don\'t have any tasks to display!</string>
 
+    <string name="browse_tasks_chip_task_type_all">In person &amp; remotely</string>
+    <string name="browse_tasks_chip_task_location">50km, sydney NSW...</string>
+    <string name="browse_tasks_chip_task_price_any">Any price</string>
+
 
 </resources>

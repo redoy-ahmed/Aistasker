@@ -14,6 +14,7 @@ import android.widget.RelativeLayout;
 import com.example.redoy.aistasker.R;
 import com.example.redoy.aistasker.adapters.TaskListAdapter;
 import com.example.redoy.aistasker.models.TaskItem;
+import com.pchmn.materialchips.ChipView;
 
 import java.util.ArrayList;
 
@@ -45,6 +46,15 @@ public class BrowseTaskListFragment extends Fragment {
     @BindView(R.id.browse_tasks_swipe_refresh_layout)
     SwipeRefreshLayout mSwipeRefreshLayout;
 
+    @BindView(R.id.browse_tasks_chip_widget_task_type)
+    ChipView mChipWidgetTaskType;
+
+    @BindView(R.id.browse_tasks_chip_widget_task_location)
+    ChipView mChipWidgetTaskLocation;
+
+    @BindView(R.id.browse_tasks_chip_widget_task_price)
+    ChipView mChipWidgetTaskPrice;
+
     private TaskListAdapter taskListAdapter;
     public LinearLayoutManager linearLayoutManager;
 
@@ -60,6 +70,11 @@ public class BrowseTaskListFragment extends Fragment {
     }
 
     private void initializeData() {
+
+        mChipWidgetTaskType.setLabel(rootView.getContext().getString(R.string.browse_tasks_chip_task_type_all));
+        mChipWidgetTaskLocation.setLabel(rootView.getContext().getString(R.string.browse_tasks_chip_task_location));
+        mChipWidgetTaskPrice.setLabel(rootView.getContext().getString(R.string.browse_tasks_chip_task_price_any));
+
         ArrayList<TaskItem> rowListItem = getAllItemList();
 
         linearLayoutManager = new LinearLayoutManager(rootView.getContext());

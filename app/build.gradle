@@ -55,4 +55,7 @@ dependencies {
 
     //facebook
     implementation 'com.facebook.android:facebook-android-sdk:4.31.0'
+
+    //chips view
+    implementation 'com.github.pchmn:MaterialChipsInput:1.0.8'
 }

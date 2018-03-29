@@ -9,6 +9,74 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/browse_tasks_app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/airBlue">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal"
+                app:layout_scrollFlags="enterAlways">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/medium"
+                    android:paddingEnd="@dimen/large"
+                    android:paddingLeft="@dimen/large"
+                    android:paddingRight="@dimen/large"
+                    android:paddingStart="@dimen/large"
+                    android:paddingTop="@dimen/medium">
+
+                    <com.pchmn.materialchips.ChipView
+                        android:id="@+id/browse_tasks_chip_widget_task_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/medium"
+                        android:layout_marginRight="@dimen/medium"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:backgroundColor="@color/airBlueMid"
+                        app:deletable="false"
+                        app:hasAvatarIcon="false"
+                        app:labelColor="@color/white" />
+
+                    <com.pchmn.materialchips.ChipView
+                        android:id="@+id/browse_tasks_chip_widget_task_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/medium"
+                        android:layout_marginRight="@dimen/medium"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:maxWidth="160dp"
+                        app:backgroundColor="@color/airBlueMid"
+                        app:deletable="false"
+                        app:hasAvatarIcon="false"
+                        app:labelColor="@color/white" />
+
+                    <com.pchmn.materialchips.ChipView
+                        android:id="@+id/browse_tasks_chip_widget_task_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/medium"
+                        android:layout_marginRight="@dimen/medium"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:minWidth="56dp"
+                        app:backgroundColor="@color/airBlueMid"
+                        app:deletable="false"
+                        app:hasAvatarIcon="false"
+                        app:labelColor="@color/white" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </android.support.design.widget.AppBarLayout>
+
         <android.support.v4.widget.SwipeRefreshLayout
             android:id="@+id/browse_tasks_swipe_refresh_layout"
             android:layout_width="match_parent"
