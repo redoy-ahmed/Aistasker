@@ -157,7 +157,6 @@
     <string name="help_insurance_label">Insurance</string>
     <string name="help_privacy_label">Privacy policy</string>
 
-    <string name="edit_profile_screen_title">Edit account</string>
     <string name="notifications_settings_screen_title">Notification settings</string>
     <string name="change_password_screen_title">Change password</string>
     <string name="add_mobile_number_screen_title">Mobile verification</string>
