@@ -55,10 +55,12 @@
             android:label="Payment Settings" />
         <activity android:name=".activities.PaymentHistoryActivity" />
         <activity android:name=".activities.ProfileActivity" />
-        <activity android:name=".activities.DashboardActivity"
-            android:label="R.string.dashboard_screen_title"/>
+        <activity
+            android:name=".activities.DashboardActivity"
+            android:label="@string/dashboard_screen_title" />
         <activity android:name=".activities.FlagActivity" />
-        <activity android:name=".activities.AllReviewsActivity"></activity>
+        <activity android:name=".activities.AllReviewsActivity" />
+        <activity android:name=".activities.EditAccountActivity"></activity>
     </application>
 
 </manifest>

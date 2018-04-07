@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/airtasker_application_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_profile_section_general_information_label" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+
+        <EditText
+            android:id="@+id/edit_account_edit_text_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edit_account_edit_text_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium"
+            android:singleLine="true" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium">
+
+            <TextView
+                android:id="@+id/edit_account_text_view_location_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/large"
+                android:textColor="@color/grey4" />
+
+            <AutoCompleteTextView
+                android:id="@+id/edit_account_edit_text_autocomplete_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ellipsize="end"
+                android:ems="-10" />
+
+            <!--<au.com.airtasker.ui.common.widgets.locationselection.LocationSelectionWidget
+                android:id="@+id/edit_account_location_selection_widget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ellipsize="end"
+                android:textAppearance="@style/TextAppearanceBase.Body"
+                android:textColor="?unknown_attr_ref: 1010036" />-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/grey3" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/edit_account_edit_text_tag_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium"
+            android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edit_account_edit_text_about_me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_profile_section_private_information_label" />
+
+        <EditText
+            android:id="@+id/edit_account_edit_text_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium"
+            android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone|time"
+            android:singleLine="true" />
+
+
+        <TextView
+            android:id="@+id/edit_account_text_view_birth_date_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/large"
+            android:text="@string/edit_profile_birth_date_label"
+            android:textColor="@color/grey4" />
+
+        <TextView
+            android:id="@+id/edit_account_text_view_birth_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edit_account_text_view_birth_date_label"
+            android:layout_below="@+id/edit_account_text_view_birth_date_label"
+            android:layout_marginBottom="@dimen/medium"
+            android:layout_marginTop="@dimen/large"
+            android:hint="@string/edit_profile_birth_date_hint" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_profile_section_additional_information_label" />
+
+        <EditText
+            android:id="@+id/edit_account_edit_text_abn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium"
+            android:hint="@string/edit_profile_abn_hint"
+            android:inputType="number|numberSigned|numberDecimal|numberPassword|phone"
+            android:singleLine="true" />
+
+        <include layout="@layout/activity_edit_account_portfolio" />
+
+        <include layout="@layout/activity_edit_account_skills" />
+    </LinearLayout>
+</ScrollView>

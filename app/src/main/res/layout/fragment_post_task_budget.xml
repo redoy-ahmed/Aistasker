@@ -221,5 +221,11 @@
                 android:textColor="@color/grey4" />
         </LinearLayout>
 
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/grey3" />
+
     </LinearLayout>
 </RelativeLayout>

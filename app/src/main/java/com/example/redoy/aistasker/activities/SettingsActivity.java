@@ -1,6 +1,7 @@
 package com.example.redoy.aistasker.activities;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
@@ -29,7 +30,7 @@ public class SettingsActivity extends AppCompatActivity {
         }
 
         public void onClick(View view) {
-            //referralsActivity.startActivity(DashboardActivity.m3795a(this.f2595a.f2604a));
+            settingsActivity.startActivity(new Intent(getApplicationContext(),EditAccountActivity.class));
         }
     }
 

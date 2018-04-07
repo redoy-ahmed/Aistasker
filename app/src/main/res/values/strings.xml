@@ -228,4 +228,40 @@
     <string name="dashboard_tab_tasks_posted">As a Poster</string>
     <string name="dashboard_tab_tasks_running">As a Tasker</string>
 
+    <string name="edit_profile">Edit profile</string>
+    <string name="edit_profile_abn_hint">What\'s your Australian Business Number?</string>
+    <string name="edit_profile_about_me_label">About me</string>
+    <string name="edit_profile_birth_date_hint">When were you born?</string>
+    <string name="edit_profile_birth_date_label">Birth date</string>
+    <string name="edit_profile_email_label">Email</string>
+    <string name="edit_profile_error_message_invalid_abn">Invalid ABN</string>
+    <string name="edit_profile_error_message_invalid_email">Invalid email address</string>
+    <string name="edit_profile_error_message_invalid_first_name">Invalid first name</string>
+    <string name="edit_profile_error_message_invalid_last_name">Invalid last name</string>
+    <string name="edit_profile_error_message_invalid_location_selected">Invalid location selected</string>
+    <string name="edit_profile_first_name_label">First name</string>
+    <string name="edit_profile_last_name_label">Last name</string>
+    <string name="edit_profile_lock_indicator_hint">Your identification details cannot be edited once they have been verified. If you need to update this field, please contact us.</string>
+    <string name="edit_profile_lock_indicator_hint_title">ID Verification</string>
+    <string name="edit_profile_portfolio_label">Portfolio</string>
+    <string name="edit_profile_screen_title">Edit account</string>
+    <string name="edit_profile_section_additional_information_label">Additional information</string>
+    <string name="edit_profile_section_general_information_label">General information</string>
+    <string name="edit_profile_section_private_information_label">Private information</string>
+    <string name="edit_profile_skills_label">Skills</string>
+    <string name="edit_profile_tag_line_label">Tagline</string>
+    <string name="edit_profile_toolbar_save_label">Save</string>
+    <string name="edit_skill_category_add_button_label">Add</string>
+    <string name="edit_skill_category_already_exists_error_message">Skill already exists</string>
+    <string name="edit_skill_category_education_input_hint">Where have you studied?</string>
+    <string name="edit_skill_category_education_label">Education</string>
+    <string name="edit_skill_category_languages_input_hint">What languages you\'re versed in?</string>
+    <string name="edit_skill_category_languages_label">Languages</string>
+    <string name="edit_skill_category_specialities_input_hint">What tasks are you great at?</string>
+    <string name="edit_skill_category_specialities_label">Specialities</string>
+    <string name="edit_skill_category_transportation_input_hint">Select your means of transportation?</string>
+    <string name="edit_skill_category_transportation_label">Transportation</string>
+    <string name="edit_skill_category_work_input_hint">Where have you previously worked?</string>
+    <string name="edit_skill_category_work_label">Work</string>
+
 </resources>
