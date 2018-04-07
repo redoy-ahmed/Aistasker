@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_page_standard"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_page_standard"
+    android:paddingStart="@dimen/margin_page_standard">
+
+    <RelativeLayout
+        android:id="@+id/profile_skills_layout_education"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_page_standard">
+
+        <TextView
+            android:id="@+id/profile_skills_text_education_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="@dimen/medium"
+            android:text="@string/profile_skills_screen_education_label" />
+
+        <org.apmem.tools.layouts.FlowLayout
+            android:id="@+id/profile_skills_layout_education_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_skills_text_education_title"
+            android:layout_marginBottom="@dimen/medium"
+            android:layout_marginEnd="@dimen/large"
+            android:layout_marginRight="@dimen/large" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/profile_skills_layout_education_items"
+            android:layout_marginTop="@dimen/margin_page_standard" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profile_skills_layout_specialties"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_page_standard">
+
+        <TextView
+            android:id="@+id/profile_skills_text_specialties_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="@dimen/medium"
+            android:text="@string/profile_skills_screen_specialities_label" />
+
+        <org.apmem.tools.layouts.FlowLayout
+            android:id="@+id/profile_skills_layout_specialties_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_skills_text_specialties_title"
+            android:layout_marginBottom="@dimen/medium"
+            android:layout_marginEnd="@dimen/large"
+            android:layout_marginRight="@dimen/large" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/profile_skills_layout_specialties_items"
+            android:layout_marginTop="@dimen/margin_page_standard" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profile_skills_layout_languages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_page_standard">
+
+        <TextView
+            android:id="@+id/profile_skills_text_languages_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="@dimen/medium"
+            android:text="@string/profile_skills_screen_languages_label" />
+
+        <org.apmem.tools.layouts.FlowLayout
+            android:id="@+id/profile_skills_layout_languages_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_skills_text_languages_title"
+            android:layout_marginBottom="@dimen/medium"
+            android:layout_marginEnd="@dimen/large"
+            android:layout_marginRight="@dimen/large" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/profile_skills_layout_languages_items"
+            android:layout_marginTop="@dimen/margin_page_standard" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profile_skills_layout_work"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large">
+
+        <TextView
+            android:id="@+id/profile_skills_text_work_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="@dimen/medium"
+            android:text="@string/profile_skills_screen_work_label" />
+
+        <org.apmem.tools.layouts.FlowLayout
+            android:id="@+id/profile_skills_layout_work_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_skills_text_work_title"
+            android:layout_marginBottom="@dimen/medium"
+            android:layout_marginEnd="@dimen/large"
+            android:layout_marginRight="@dimen/large" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/profile_skills_layout_work_items"
+            android:layout_marginTop="@dimen/margin_page_standard" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profile_skills_layout_transportation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_page_standard">
+
+        <TextView
+            android:id="@+id/profile_skills_text_transportation_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="@dimen/medium"
+            android:text="@string/profile_skills_screen_transportation_label" />
+
+        <org.apmem.tools.layouts.FlowLayout
+            android:id="@+id/profile_skills_layout_transportation_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_skills_text_transportation_title"
+            android:layout_marginBottom="@dimen/medium"
+            android:layout_marginEnd="@dimen/large"
+            android:layout_marginRight="@dimen/large" />
+    </RelativeLayout>
+</LinearLayout>

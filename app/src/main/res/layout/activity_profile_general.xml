@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_page_standard"
+    android:paddingRight="@dimen/margin_page_standard"
+    android:paddingTop="@dimen/very_large">
+
+    <TextView
+        android:id="@+id/profile_general_text_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/profile_general_text_last_online"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:paddingTop="@dimen/large"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+        android:paddingTop="@dimen/small">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:tint="@color/white"
+            app:srcCompat="@drawable/ic_location_pin_14dp" />
+
+        <TextView
+            android:id="@+id/profile_general_text_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:paddingLeft="@dimen/small"
+            android:paddingRight="@dimen/small"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/profile_about_text_member_since"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:layout_marginTop="@dimen/small"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/profile_general_button_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+        android:layout_marginTop="@dimen/huge"
+        android:text="@string/profile_button_request_a_quote" />
+
+    <TextView
+        android:id="@+id/profile_general_text_report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:drawableLeft="@drawable/ic_flag"
+        android:drawablePadding="@dimen/medium"
+        android:drawableStart="@drawable/ic_flag"
+        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:paddingTop="@dimen/large"
+        android:text="@string/profile_report_user_button_label"
+        android:textColor="@color/white" />
+</LinearLayout>

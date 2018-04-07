@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profile_about_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/profile_section_margin"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_page_standard"
+    android:paddingRight="@dimen/margin_page_standard">
+
+    <TextView
+        android:id="@+id/profile_general_text_view_tag_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:layout_marginTop="@dimen/large"
+        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:textColor="@color/grey5"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/profile_about_text_view_custom_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:layout_marginTop="@dimen/large"
+        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:textColor="@color/grey5"
+        android:textSize="26sp" />
+
+</LinearLayout>

@@ -23,6 +23,17 @@
     <color name="airPinkPressed">#e5695f</color>
     <color name="airRed">#ec514b</color>
 
+    <color name="transparent">#00000000</color>
+    <color name="transparent_12">#1e000000</color>
+    <color name="transparent_25">#3f000000</color>
+    <color name="transparent_30">#4c000000</color>
+    <color name="transparent_5">#0d000000</color>
+    <color name="transparent_50">#80000000</color>
+    <color name="transparent_5_white">#0dffffff</color>
+    <color name="transparent_62">#9e000000</color>
+    <color name="transparent_75">#bf000000</color>
+    <color name="transparent_87">#dd000000</color>
+
     <color name="white_transparent_40">#66ffffff</color>
     <color name="white_transparent_70">#b3ffffff</color>
     <color name="white_transparent_89">#efffffff</color>

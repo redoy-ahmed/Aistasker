@@ -29,5 +29,7 @@
     <dimen name="chip_padding_left_right">12dp</dimen>
 
     <dimen name="very_large">24dp</dimen>
+    <dimen name="profile_section_margin">40dp</dimen>
+
 
 </resources>

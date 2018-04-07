@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/airtasker_application_background">
+
+    <Spinner
+        android:id="@+id/flag_drop_down_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/flag_edit_text_user_input"
+        android:layout_below="@+id/flag_drop_down_category"
+        android:layout_marginTop="@dimen/large"
+        android:hint="@string/flag_screen_please_enter_a_comment_message"
+        android:maxLines="8"
+        android:minLines="5"
+        android:padding="@dimen/large"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+    <Button
+        android:id="@+id/flag_button_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/flag_screen_send_report_button_label" />
+</RelativeLayout>

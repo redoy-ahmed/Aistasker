@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/profile_section_margin"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/profile_reviews_text_view_no_reviews_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:layout_marginLeft="@dimen/large"
+            android:layout_marginRight="@dimen/large"
+            android:layout_marginTop="@dimen/very_large"
+            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/profile_reviews_layout_reviews_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/large"
+        android:layout_marginRight="@dimen/large"
+        android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/profile_reviews_button_all_reviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:layout_margin="@dimen/margin_page_standard"
+        android:text="@string/layout_reviews_button_view_all_reviews" />
+</LinearLayout>

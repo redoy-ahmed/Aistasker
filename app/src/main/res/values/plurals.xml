@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="browse_tasks_chip_categories_categories_selected">
+        <item quantity="one">1 Category</item>
+        <item quantity="other">%d Categories</item>
+    </plurals>
+    <plurals name="categories_selected_widget_title">
+        <item quantity="zero">All categories</item>
+        <item quantity="one">1 category</item>
+        <item quantity="other">%d categories</item>
+    </plurals>
+    <plurals name="leave_review_stars">
+        <item quantity="one">One star</item>
+        <item quantity="other">%d stars</item>
+    </plurals>
+    <plurals name="list_item_categories_results">
+        <item quantity="one">%1$s result</item>
+        <item quantity="other">%1$s results</item>
+    </plurals>
+    <plurals name="list_item_categories_results_with_names">
+        <item quantity="one">%1$s result ∙ %2$s</item>
+        <item quantity="other">%1$s results ∙ %2$s</item>
+    </plurals>
+    <plurals name="list_item_comment_more_replies_label">
+        <item quantity="one">%d more reply</item>
+        <item quantity="other">%d more replies</item>
+    </plurals>
+    <plurals name="list_item_task_comments_label">
+        <item quantity="one">%d Comment</item>
+        <item quantity="other">%d Comments</item>
+    </plurals>
+    <plurals name="list_item_task_offers_label">
+        <item quantity="one">• %d Offer</item>
+        <item quantity="other">• %d Offers</item>
+    </plurals>
+    <plurals name="list_item_task_taskers_label">
+        <item quantity="one">• %d Tasker</item>
+        <item quantity="other">• %d Taskers</item>
+    </plurals>
+    <plurals name="number_of_reviews">
+        <item quantity="one">%d review</item>
+        <item quantity="other">%d reviews</item>
+    </plurals>
+    <plurals name="post_task_details_must_haves">
+        <item quantity="one">1 Must-have</item>
+        <item quantity="other">%d Must-haves</item>
+    </plurals>
+    <plurals name="result_counter_widget_results">
+        <item quantity="zero">No results</item>
+        <item quantity="one">%1$s result</item>
+        <item quantity="other">%1$s results</item>
+    </plurals>
+    <plurals name="task_details_button_view_offers">
+        <item quantity="one">Review offer</item>
+        <item quantity="other">Review offers</item>
+    </plurals>
+    <plurals name="widget_edit_text_material_characters_remain_message">
+        <item quantity="one">1 character remain</item>
+        <item quantity="other">%d characters remain</item>
+    </plurals>
+    <plurals name="widget_edit_text_material_type_more_characters_message">
+        <item quantity="one">Type 1 more character</item>
+        <item quantity="other">Type %d more characters</item>
+    </plurals>
+</resources>

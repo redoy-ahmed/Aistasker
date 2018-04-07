@@ -175,5 +175,57 @@
 
     <string name="payment_method_widget_task_credit_label">Task credits</string>
     <string name="payment_method_widget_task_credit_balance_label">Balance: %1$s</string>
+    <string name="layout_reviews_button_view_all_reviews">View all reviews</string>
+    <string name="profile_about_label">About</string>
+    <string name="profile_screen_portfolio_section_label">Portfolio</string>
+    <string name="profile_screen_skills_section_label">Skills</string>
+
+    <string name="profile_skills_screen_education_label">Education</string>
+    <string name="profile_skills_screen_languages_label">Languages</string>
+    <string name="profile_skills_screen_specialities_label">Specialities</string>
+    <string name="profile_skills_screen_transportation_label">Transportation</string>
+    <string name="profile_skills_screen_work_label">Work</string>
+    <string name="profile_button_request_a_quote">Request a quote</string>
+    <string name="profile_report_user_button_label">Report this member</string>
+
+
+    <string name="verification_badges_digital_id_name">Digital iD</string>
+    <string name="verification_badges_view_explanation_learn_more">Learn more</string>
+    <string name="verification_badges_view_explanation_mobile_label">Mobile</string>
+    <string name="verification_badges_view_explanation_police_check_label">Police Check Badge</string>
+    <string name="verification_badges_view_label_cba">Commbank Identified</string>
+    <string name="verification_badges_view_label_credit_card">Credit Card</string>
+    <string name="verification_badges_view_label_facebook">Facebook</string>
+    <string name="verification_badges_view_label_linked_in">LinkedIn</string>
+    <string name="verification_badges_view_label_twitter">Twitter</string>
+    <string name="verification_ikea_badge_name">Ikea Badge</string>
+
+    <string name="view_user_no_badges_yet">Where are the ID Badges? None have been applied yet.</string>
+    <string name="view_badges_badges_label">Badges</string>
+    <string name="flag_screen_please_enter_a_comment_message">Please enter a comment</string>
+    <string name="flag_screen_send_report_button_label">Send report</string>
+
+    <string name="completion_rate_new_tasker">New!\nNo Completion Rate</string>
+    <string name="completion_rate_none">No Completion Rate</string>
+    <string name="completion_rate">%1$s%% Completion Rate</string>
+    <string name="profile_posted_tasks">%1$s posted tasks</string>
+    <string name="profile_completed_tasks">%1$s completed tasks</string>
+
+    <string name="flag_type_breach_of_marketplace_rules">Breach of marketplace rules</string>
+    <string name="flag_type_other">Other</string>
+    <string name="flag_type_rude_or_offensive">Rude or offensive</string>
+    <string name="flag_type_spam">Spam</string>
+
+    <string name="dashboard">Dashboard</string>
+    <string name="dashboard_column_bid_on_label">Bid on</string>
+    <string name="dashboard_column_open_for_offers_label">Open for offers</string>
+    <string name="dashboard_screen_notifications_header_label">Notifications</string>
+    <string name="dashboard_tab_assigned">Assigned</string>
+    <string name="dashboard_tab_awaiting_payments">Awaiting Payments</string>
+    <string name="dashboard_tab_bid_on">Bid On</string>
+    <string name="dashboard_tab_completed">Completed</string>
+    <string name="dashboard_tab_overdue">Overdue</string>
+    <string name="dashboard_tab_tasks_posted">As a Poster</string>
+    <string name="dashboard_tab_tasks_running">As a Tasker</string>
 
 </resources>

@@ -1,9 +1,194 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.redoy.aistasker.activities.ProfileActivity">
+    android:background="@color/white"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="false">
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_reviews_and_completion_rate" />
+
+            <TextView
+                android:id="@+id/activity_profile_text_sub_header_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_about_label" />
+
+            <include layout="@layout/activity_profile_about" />
+
+            <TextView
+                android:id="@+id/activity_profile_text_sub_header_portfolio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_screen_portfolio_section_label" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/activity_profile_viewpager_portfolio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/profile_section_margin"
+                android:layout_marginLeft="@dimen/margin_page_half_pager"
+                android:layout_marginRight="@dimen/margin_page_half_pager"
+                android:layout_marginTop="@dimen/margin_page_standard"
+                android:background="@color/airtasker_application_background"
+                android:clipChildren="false"
+                android:clipToPadding="false" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/airtasker_application_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/view_badges_badges_label" />
+
+                <LinearLayout
+                    android:id="@+id/view_user_badges_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large"
+                    android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/view_user_badges_no_badges_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/large"
+                        android:layout_marginEnd="@dimen/small"
+                        android:layout_marginRight="@dimen/small"
+                        android:text="@string/view_user_no_badges_yet"
+                        android:textColor="@color/grey4" />
+
+                    <Button
+                        android:id="@+id/view_user_badges_learn_more_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/large"
+                        android:layout_marginLeft="@dimen/margin_page_standard"
+                        android:layout_marginRight="@dimen/margin_page_standard"
+                        android:text="@string/verification_badges_view_explanation_learn_more" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_screen_skills_section_label" />
+
+            <include layout="@layout/activity_profile_skills" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/activity_profile_app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/activity_profile_collapsing_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="true"
+            android:foregroundGravity="bottom|right"
+            android:foregroundTintMode="add"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginStart="@dimen/medium"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/activity_profile_image_backdrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:visibility="visible" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/backdrop_gradient"
+                android:fitsSystemWindows="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="108dp"
+                android:fitsSystemWindows="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/activity_profile_avatar_widget"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/avatar_logo" />
+
+                    <ImageView
+                        android:id="@+id/activity_profile_avatar_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        app:srcCompat="@drawable/ic_camera_circle" />
+                </FrameLayout>
+
+                <include
+                    layout="@layout/activity_profile_general"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/small"
+                    android:fitsSystemWindows="true" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/activity_profile_backdrop_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginEnd="@dimen/medium"
+                android:layout_marginRight="@dimen/margin_page_standard"
+                android:layout_marginTop="72dp"
+                android:fitsSystemWindows="true"
+                app:srcCompat="@drawable/ic_camera_circle" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/activity_profile_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+</android.support.design.widget.CoordinatorLayout>
