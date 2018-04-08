@@ -263,4 +263,32 @@
     <string name="edit_skill_category_work_input_hint">Where have you previously worked?</string>
     <string name="edit_skill_category_work_label">Work</string>
 
+    <string name="task_details_awaiting_offers_label">Waiting for offers</string>
+    <string name="task_details_view_all_offers_button">View all offers</string>
+    <string name="layout_comments_input_fair_marketplace_message">Let the people know the answers! But please don\'t share personal info like phone or email…</string>
+    <string name="task_details_comments_view_all_button">View all</string>
+    <string name="task_details_must_haves">Must-haves</string>
+    <string name="task_details_open_private_messages_button">Open private messages</string>
+    <string name="task_details_allow_incoming_calls_switch_label">Allow incoming calls for this task</string>
+    <string name="task_details_text_view_reviews_section_label">Reviews</string>
+    <string name="task_details_description">Details</string>
+
+    <string name="task_details_description_less">Less</string>
+    <string name="task_details_description_more">More</string>
+    <string name="task_details_due_date_due_date_label">DUE DATE</string>
+    <string name="task_details_due_date_reschedule_button_label">Reschedule</string>
+    <string name="task_details_location">Location</string>
+    <string name="task_details_view_map">View map</string>
+    <string name="task_details_posted_by_label">Posted by</string>
+    <string name="task_details_per_tasker">per Tasker</string>
+    <string name="task_details_increase_price">Increase price</string>
+    <string name="task_details_description_view_project_button">View project</string>
+    <string name="task_details_pending_price_increase">Waiting for increase</string>
+    <string name="layout_project_header_label">Project summary</string>
+    <string name="project_layout_spots_left_label">Spots left</string>
+    <string name="project_layout_assigned_label">Assigned</string>
+    <string name="project_layout_offers_label">Offers</string>
+    <string name="task_details_project_layout_finalise_project_button">Finalise project</string>
+    <string name="task_details_prompt_info">You will be prompted to confirm the release of payment</string>
+
 </resources>

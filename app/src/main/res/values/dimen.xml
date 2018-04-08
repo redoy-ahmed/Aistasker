@@ -22,6 +22,7 @@
     <dimen name="masked_card_row_start_padding">20dp</dimen>
     <dimen name="masked_card_vertical_padding">4dp</dimen>
     <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="task_detail_action_button_height">56dp</dimen>
 
     <dimen name="height_for_fb_button">50dp</dimen>
     <dimen name="height_for_spinner">40dp</dimen>

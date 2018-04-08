@@ -22,6 +22,11 @@
     <color name="airPink">#fb675b</color>
     <color name="airPinkPressed">#e5695f</color>
     <color name="airRed">#ec514b</color>
+    <color name="readMoreLessButtonColour">@color/airBlue</color>
+    <color name="orangeLight">#ffd8a6</color>
+    <color name="orangeDark">#b28216</color>
+    <color name="greenAlertWidgetText">#7a9a1d</color>
+    <color name="greenAlertWidgetBackground">#daf196</color>
 
     <color name="transparent">#00000000</color>
     <color name="transparent_12">#1e000000</color>

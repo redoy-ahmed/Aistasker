@@ -60,7 +60,8 @@
             android:label="@string/dashboard_screen_title" />
         <activity android:name=".activities.FlagActivity" />
         <activity android:name=".activities.AllReviewsActivity" />
-        <activity android:name=".activities.EditAccountActivity"></activity>
+        <activity android:name=".activities.EditAccountActivity" />
+        <activity android:name=".activities.TaskDetailsActivity"></activity>
     </application>
 
 </manifest>
