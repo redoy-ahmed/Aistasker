@@ -291,4 +291,17 @@
     <string name="task_details_project_layout_finalise_project_button">Finalise project</string>
     <string name="task_details_prompt_info">You will be prompted to confirm the release of payment</string>
 
+    <string name="payment_history_tab_title_earned">Earned</string>
+    <string name="payment_history_tab_title_outgoing">Outgoing</string>
+
+    <string name="payment_history_download_button">Download</string>
+    <string name="payment_history_csv_file_label">CSV file</string>
+    <string name="payment_history_amount_label_net_earnings">Net earnings</string>
+    <string name="payment_history_showing_label">Showing:</string>
+
+    <string name="payment_history_no_transactions_earned">You haven\'t earned from any tasks yet. How about looking for one to do now?</string>
+    <string name="payment_history_no_transactions_filtered">You don\'t have any payments to show here. Change your filter settings above.</string>
+
+    <string name="payment_history_no_transactions_outgoing">You haven\'t paid for any tasks yet.</string>
+
 </resources>
