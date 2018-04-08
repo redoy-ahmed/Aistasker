@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/large"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/task_details_description" />
+
+    <!--<au.com.airtasker.ui.common.widgets.ExpandableTextView
+        android:id="@+id/task_details_description_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:collapseImage="@drawable/ic_up_arrow"
+        android:collapseLabel="@string/task_details_description_less"
+        android:expandImage="@drawable/ic_down_arrow"
+        android:expandLabel="@string/task_details_description_more"
+        android:linesToShow="3"
+        android:paddingEnd="@dimen/margin_page_standard"
+        android:paddingLeft="@dimen/margin_page_standard"
+        android:paddingRight="@dimen/margin_page_standard"
+        android:paddingStart="@dimen/margin_page_standard"
+        android:paddingTop="@dimen/large"
+        android:textColor="@color/grey5" />
+
+    <au.com.airtasker.ui.common.widgets.TaskIkeaBadgeExtraWidget
+        android:id="@+id/task_details_ikea_badge_extras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <au.com.airtasker.ui.common.widgets.ResizeGridView
+        android:id="@+id/task_details_description_grid_view_attachments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="@dimen/attachment_grid_spacing"
+        android:numColumns="UNKNOWN_DATA_0x7f090036"
+        android:paddingEnd="@dimen/large"
+        android:paddingLeft="@dimen/large"
+        android:paddingRight="@dimen/large"
+        android:paddingStart="@dimen/large"
+        android:paddingTop="@dimen/large"
+        android:verticalSpacing="@dimen/attachment_grid_spacing" />-->
+
+    <TextView
+        android:id="@+id/task_details_description_collapse_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_up_arrow"
+        android:drawablePadding="@dimen/small"
+        android:drawableRight="@drawable/ic_up_arrow"
+        android:paddingEnd="@dimen/large"
+        android:paddingLeft="@dimen/large"
+        android:paddingRight="@dimen/large"
+        android:paddingStart="@dimen/large"
+        android:paddingTop="@dimen/small"
+        android:text="@string/task_details_description_less"
+        android:textColor="@color/readMoreLessButtonColour" />
+
+    <Button
+        android:id="@+id/task_details_description_view_project_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/large"
+        android:layout_marginRight="@dimen/large"
+        android:layout_marginTop="@dimen/large"
+        android:text="@string/task_details_description_view_project_button" />
+
+    <include layout="@layout/task_details_description_requirements_layout" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large" />
+</LinearLayout>

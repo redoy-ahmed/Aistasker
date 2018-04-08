@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/large">
+
+    <TextView
+        android:id="@+id/project_layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/layout_project_header_label" />
+
+    <!-- <au.com.airtasker.ui.common.widgets.HorizontalBarWidget
+         android:id="@+id/project_layout_horizontal_bar_widget_progress"
+         android:layout_width="match_parent"
+         android:layout_height="UNKNOWN_DATA_0x2401"
+         android:layout_below="@+id/project_layout_header"
+         android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+         android:layout_margin="@dimen/large"
+         android:textSize="14sp" />-->
+
+    <LinearLayout
+        android:id="@+id/project_layout_statistics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:paddingLeft="@dimen/large"
+        android:paddingRight="@dimen/large">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:id="@+id/project_layout_spots_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/grey4"
+                android:textSize="36sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/project_layout_spots_count"
+                android:layout_centerHorizontal="true"
+                android:text="@string/project_layout_spots_left_label" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:id="@+id/project_layout_assigned_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/grey4"
+                android:textSize="36sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/project_layout_assigned_count"
+                android:layout_centerHorizontal="true"
+                android:text="@string/project_layout_assigned_label" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:id="@+id/project_layout_offers_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/grey4"
+                android:textSize="36sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/project_layout_offers_count"
+                android:layout_centerHorizontal="true"
+                android:text="@string/project_layout_offers_label" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/project_layout_finalise_project_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/project_layout_statistics"
+        android:text="@string/task_details_project_layout_finalise_project_button" />
+</RelativeLayout>

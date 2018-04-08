@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/large"
+    android:paddingLeft="@dimen/margin_page_standard"
+    android:paddingRight="@dimen/margin_page_standard">
+
+    <ImageView
+        android:id="@+id/task_details_avatar_widget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:id="@+id/posted_by_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/task_details_avatar_widget"
+        android:layout_alignTop="@+id/task_details_avatar_widget"
+        android:layout_marginEnd="@dimen/medium"
+        android:layout_marginLeft="@dimen/medium"
+        android:layout_marginRight="@dimen/medium"
+        android:layout_marginStart="@dimen/medium"
+        android:layout_toEndOf="@+id/task_details_avatar_widget"
+        android:layout_toLeftOf="@+id/task_details_time_posted_text_view"
+        android:layout_toRightOf="@+id/task_details_avatar_widget"
+        android:layout_toStartOf="@+id/task_details_time_posted_text_view"
+        android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/task_details_posted_by_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/small"
+            android:paddingEnd="@dimen/tiny"
+            android:paddingLeft="@dimen/tiny"
+            android:paddingRight="@dimen/tiny"
+            android:paddingStart="@dimen/tiny"
+            android:text="@string/task_details_posted_by_label" />
+
+        <!--<au.com.airtasker.ui.common.widgets.clickableuser.ClickableUserWidget
+            android:id="@+id/task_details_sender_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/tiny"
+            android:paddingEnd="@dimen/tiny"
+            android:paddingLeft="@dimen/tiny"
+            android:paddingRight="@dimen/tiny"
+            android:paddingStart="@dimen/tiny" />-->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/task_details_time_posted_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/posted_by_linear_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="@dimen/tiny"
+        android:paddingEnd="@dimen/medium"
+        android:paddingLeft="@dimen/medium"
+        android:paddingRight="@dimen/medium"
+        android:paddingStart="@dimen/medium"
+        android:textColor="@color/grey4" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/posted_by_linear_layout"
+        android:layout_alignStart="@+id/posted_by_linear_layout"
+        android:layout_below="@+id/task_details_time_posted_text_view"
+        android:layout_marginTop="@dimen/large" />
+</RelativeLayout>

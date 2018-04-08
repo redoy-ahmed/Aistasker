@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/large"
+    android:paddingLeft="@dimen/margin_page_standard"
+    android:paddingRight="@dimen/margin_page_standard">
+
+    <ImageView
+        android:id="@+id/location_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="@dimen/small"
+        android:src="@drawable/ic_location_pin_24dp"
+        android:tint="@color/grey3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/medium"
+        android:layout_marginLeft="@dimen/medium"
+        android:layout_marginRight="@dimen/medium"
+        android:layout_marginStart="@dimen/medium"
+        android:layout_toEndOf="@+id/location_image_view"
+        android:layout_toRightOf="@+id/location_image_view"
+        android:paddingEnd="@dimen/tiny"
+        android:paddingLeft="@dimen/tiny"
+        android:paddingRight="@dimen/tiny"
+        android:paddingStart="@dimen/tiny"
+        android:paddingTop="@dimen/tiny"
+        android:text="@string/task_details_location" />
+
+    <TextView
+        android:id="@+id/task_details_location_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/location_image_view"
+        android:layout_marginEnd="@dimen/medium"
+        android:layout_marginLeft="@dimen/medium"
+        android:layout_marginRight="@dimen/medium"
+        android:layout_marginStart="@dimen/medium"
+        android:layout_toEndOf="@+id/location_image_view"
+        android:layout_toLeftOf="@+id/task_details_get_directions_text_view"
+        android:layout_toRightOf="@+id/location_image_view"
+        android:layout_toStartOf="@+id/task_details_get_directions_text_view"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingBottom="@dimen/tiny"
+        android:paddingEnd="@dimen/tiny"
+        android:paddingLeft="@dimen/tiny"
+        android:paddingRight="@dimen/tiny"
+        android:paddingStart="@dimen/tiny"
+        android:textColor="@color/grey5" />
+
+    <TextView
+        android:id="@+id/task_details_get_directions_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/task_details_location_text_view"
+        android:layout_alignBottom="@+id/task_details_location_text_view"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="@dimen/tiny"
+        android:paddingEnd="@dimen/medium"
+        android:paddingLeft="@dimen/medium"
+        android:paddingRight="@dimen/medium"
+        android:paddingStart="@dimen/medium"
+        android:text="@string/task_details_view_map"
+        android:textColor="@color/airtasker_primary_color" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/task_details_location_text_view"
+        android:layout_alignStart="@+id/task_details_location_text_view"
+        android:layout_below="@+id/task_details_location_text_view"
+        android:layout_marginTop="@dimen/large" />
+</RelativeLayout>

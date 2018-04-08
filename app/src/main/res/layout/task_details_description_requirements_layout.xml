@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/task_details_requirements_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/large">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/task_details_must_haves" />
+
+    <ImageView
+        android:id="@+id/task_details_badge_requirement_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/margin_page_standard"
+        android:paddingStart="@dimen/margin_page_standard"
+        android:paddingTop="@dimen/large" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/task_details_requirements_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/grey4"
+        android:paddingTop="@dimen/medium" />
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/airtasker_application_background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <requestFocus />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/task_details_swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/task_details_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.0"
+            android:background="@color/white"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--<au.com.airtasker.ui.common.widgets.AlertWidget
+                    android:id="@+id/task_details_alert_widget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />-->
+
+                <com.example.redoy.aistasker.widget.TaskProgressBarWidget
+                    android:id="@+id/task_details_progress_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_page_standard"
+                    android:layout_marginRight="@dimen/margin_page_standard"
+                    android:layout_marginTop="@dimen/very_large" />
+
+                <TextView
+                    android:id="@+id/task_details_task_title_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large"
+                    android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:paddingLeft="@dimen/margin_page_standard"
+                    android:paddingRight="@dimen/margin_page_standard"
+                    android:textColor="@color/grey5" />
+
+                <include layout="@layout/task_details_posted_by_layout" />
+
+                <include layout="@layout/task_details_location_layout" />
+
+                <include layout="@layout/task_details_due_date_layout" />
+
+                <include layout="@layout/task_details_price_layout" />
+
+                <Switch
+                    android:id="@+id/task_details_allow_calls_for_task_switch"
+                    android:layout_marginBottom="@dimen/large"
+                    android:layout_marginTop="@dimen/large"
+                    android:paddingLeft="@dimen/large"
+                    android:paddingRight="@dimen/large"
+                    android:text="@string/task_details_allow_incoming_calls_switch_label"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+
+                <ViewStub
+                    android:id="@+id/task_details_view_stub_project_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large"
+                    android:layout="@layout/task_details_project_layout" />
+
+                <include layout="@layout/task_details_description_layout" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/task_details_review_header"
+                    android:layout_marginTop="@dimen/large"
+                    android:text="@string/task_details_text_view_reviews_section_label"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/task_details_review1"
+                    layout="@layout/list_item_review"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/task_details_review2"
+                    layout="@layout/list_item_review"
+                    android:visibility="gone" />
+
+                <include layout="@layout/task_details_private_messages_layout" />
+
+                <include layout="@layout/task_details_offers_layout" />
+
+                <include layout="@layout/task_details_assignees_layout" />
+
+                <include layout="@layout/task_details_comments_layout" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

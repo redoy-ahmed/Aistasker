@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_comments_layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/large">
+
+    <TextView
+        android:id="@+id/layout_comments_text_view_section_title"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+
+    <include
+        android:id="@+id/layout_comments_layout_input_with_message"
+        layout="@layout/layout_comments_input_with_message" />
+
+    <LinearLayout
+        android:id="@+id/layout_comments_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/small"
+        android:paddingTop="@dimen/small" />
+
+    <Button
+        android:id="@+id/layout_comments_button_view_all_comments"
+        android:layout_marginBottom="@dimen/large"
+        android:layout_marginLeft="@dimen/margin_page_standard"
+        android:layout_marginRight="@dimen/margin_page_standard"
+        android:text="@string/task_details_comments_view_all_button"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+</LinearLayout>
