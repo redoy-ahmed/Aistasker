@@ -30,7 +30,7 @@ public class SettingsActivity extends AppCompatActivity {
         }
 
         public void onClick(View view) {
-            settingsActivity.startActivity(new Intent(getApplicationContext(),EditAccountActivity.class));
+            settingsActivity.startActivity(new Intent(getApplicationContext(), EditAccountActivity.class));
         }
     }
 
@@ -42,7 +42,7 @@ public class SettingsActivity extends AppCompatActivity {
         }
 
         public void onClick(View view) {
-            //referralsActivity.startActivity(DashboardActivity.m3795a(this.f2595a.f2604a));
+            settingsActivity.startActivity(new Intent(getApplicationContext(), NotificationSettingsActivity.class));
         }
     }
 
@@ -54,7 +54,7 @@ public class SettingsActivity extends AppCompatActivity {
         }
 
         public void onClick(View view) {
-            //referralsActivity.startActivity(DashboardActivity.m3795a(this.f2595a.f2604a));
+            settingsActivity.startActivity(new Intent(getApplicationContext(), ChangePasswordActivity.class));
         }
     }
 
@@ -66,7 +66,7 @@ public class SettingsActivity extends AppCompatActivity {
         }
 
         public void onClick(View view) {
-            //referralsActivity.startActivity(DashboardActivity.m3795a(this.f2595a.f2604a));
+            settingsActivity.startActivity(new Intent(getApplicationContext(), MobileVerificationActivity.class));
         }
     }
 
@@ -92,6 +92,7 @@ public class SettingsActivity extends AppCompatActivity {
         linearLayout.addView(optionListItem3.view, new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 150));
         linearLayout.addView(optionListItem4.view, new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 150));
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem menuItem) {
         switch (menuItem.getItemId()) {
@@ -102,5 +103,4 @@ public class SettingsActivity extends AppCompatActivity {
         }
         return (super.onOptionsItemSelected(menuItem));
     }
-
 }

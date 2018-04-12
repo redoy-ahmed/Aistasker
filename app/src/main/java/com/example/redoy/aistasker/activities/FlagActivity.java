@@ -2,6 +2,7 @@ package com.example.redoy.aistasker.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -34,6 +35,8 @@ public class FlagActivity extends AppCompatActivity {
     }
 
     private void initializeWidgets() {
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     private void initializeData() {
@@ -45,5 +48,16 @@ public class FlagActivity extends AppCompatActivity {
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, strArr);
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mDropDownWidget.setAdapter(dataAdapter);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem menuItem) {
+        switch (menuItem.getItemId()) {
+            case android.R.id.home: {
+                finish();
+                return true;
+            }
+        }
+        return (super.onOptionsItemSelected(menuItem));
     }
 }

@@ -8,6 +8,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SwitchCompat;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -189,6 +190,10 @@ public class ProfileActivity extends AppCompatActivity {
     }
 
     private void initializeWidgets() {
+
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         this.mButtonAction.setVisibility(GONE);
         this.mButtonAction.setOnClickListener(new PostTaskClass(this));
         this.mAvatarEditView.setVisibility(GONE);
@@ -197,5 +202,16 @@ public class ProfileActivity extends AppCompatActivity {
         this.mTextViewReport.setVisibility(GONE);
         this.mTextViewReport.setOnClickListener(new FlagClass(this));
         //this.mStateSelectorTop.setOnStateChangerListener(new C08223(this));
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem menuItem) {
+        switch (menuItem.getItemId()) {
+            case android.R.id.home: {
+                finish();
+                return true;
+            }
+        }
+        return (super.onOptionsItemSelected(menuItem));
     }
 }

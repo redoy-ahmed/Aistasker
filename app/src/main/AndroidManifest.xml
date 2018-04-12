@@ -61,7 +61,12 @@
         <activity android:name=".activities.FlagActivity" />
         <activity android:name=".activities.AllReviewsActivity" />
         <activity android:name=".activities.EditAccountActivity" />
-        <activity android:name=".activities.TaskDetailsActivity"></activity>
+        <activity android:name=".activities.TaskDetailsActivity" />
+        <activity android:name=".activities.NotificationSettingsActivity" />
+        <activity android:name=".activities.AirtaskerAlertsNotificationTypesActivity" />
+        <activity android:name=".activities.ChangePasswordActivity" />
+        <activity android:name=".activities.MobileVerificationActivity" />
+        <activity android:name=".activities.TaskAlertEditActivity"></activity>
     </application>
 
 </manifest>

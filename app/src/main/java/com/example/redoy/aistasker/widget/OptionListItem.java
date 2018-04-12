@@ -22,8 +22,4 @@ public class OptionListItem {
         textView.setText(str);
         this.view.setOnClickListener(onClickListener);
     }
-
-    public void m1858a() {
-        this.view.findViewById(R.id.option_item_widget_image_view_chevron).setVisibility(View.GONE);
-    }
 }

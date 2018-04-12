@@ -304,4 +304,70 @@
 
     <string name="payment_history_no_transactions_outgoing">You haven\'t paid for any tasks yet.</string>
 
+    <string name="notifications_settings_test_header">Is it working?</string>
+    <string name="notifications_settings_test_send_button">Test it</string>
+    <string name="notifications_settings_transactional_details">You will always receive important notifications about any payments, cancellations and your account.</string>
+    <string name="notifications_settings_type_email">Email</string>
+    <string name="notifications_settings_type_push">Push</string>
+    <string name="notifications_settings_type_sms">SMS</string>
+    <string name="notifications_settings_updates_newsletters_details">Be the first to hear about new features and exciting updates on Airtasker.</string>
+
+    <string name="notifications_screen_title">Notifications</string>
+    <string name="notifications_settings">@string/notifications_settings_screen_title</string>
+    <string name="notifications_settings_details_airtasker_alerts">Once you\'ve set up your Airtasker Alerts, you\'ll be instantly notified when a task is posted that matches your requirements.</string>
+    <string name="notifications_settings_details_task_recommendations">Receive recommendations and be inspired by tasks close to you.</string>
+    <string name="notifications_settings_helpful_information_details">Learn about how to earn more and find the right people for your tasks with helpful tips and advice.</string>
+    <string name="notifications_settings_label_airtasker_alerts">Airtasker alerts</string>
+    <string name="notifications_settings_label_helpful_information">Helpful information</string>
+    <string name="notifications_settings_label_task_recommendations">Task recommendations</string>
+    <string name="notifications_settings_label_task_reminders">Task reminders</string>
+    <string name="notifications_settings_label_task_updates">Task updates</string>
+    <string name="notifications_settings_label_transactional">Transactional</string>
+    <string name="notifications_settings_label_updates_newsletters">Updates &amp; newsletters</string>
+    <string name="notifications_settings_must_be_on">Must be on</string>
+    <string name="notifications_settings_push_notifications">Push notifications</string>
+    <string name="notifications_settings_section">Your notifications can be updated at any time via the options below</string>
+    <string name="notifications_settings_task_reminders_details">Friendly reminders if you\'ve forgotten to accept an offer, release a payment or leave a review.</string>
+    <string name="notifications_settings_task_updates_details">Receive updates on any new comments, private messages, offers and reviews.</string>
+    <string name="notifications_settings_test_description">Make sure you\'re actually getting those all important push notifications.</string>
+
+    <string name="change_password_button_change_password">Change password</string>
+    <string name="change_password_confirm_password_label">Confirm password</string>
+    <string name="change_password_current_password_label">Current password</string>
+    <string name="change_password_error_different_from_old">New password must be different from the current one</string>
+    <string name="change_password_error_minimum_length">Password minimum length is %1$s characters</string>
+    <string name="change_password_error_password_mismatch">Password mismatch</string>
+    <string name="change_password_new_password_label">New password</string>
+
+
+    <string name="add_mobile_number_allow_calls_switch_label">Allow calls for newly posted tasks</string>
+    <string name="add_mobile_number_allow_calls_switch_message">We never display your number. \nCalls are connected via Airtasker and you will receive calls directly to your mobile. \n\nCalling from Airtasker while not on WIFI, will use your data plan and may incur charges</string>
+    <string name="add_mobile_number_button_remove">Remove</string>
+    <string name="add_mobile_number_button_send_verification_code">Send verification code</string>
+    <string name="add_mobile_number_button_update">Update</string>
+    <string name="add_mobile_number_button_verify_number">Verify mobile number</string>
+    <string name="add_mobile_number_current_mobile_number_label">Current mobile number</string>
+    <string name="add_mobile_number_dialog_remove_number_message">Are you sure want to remove your verified mobile number? This would remove your currently unassigned bids</string>
+    <string name="add_mobile_number_dialog_remove_number_title">Remove number</string>
+    <string name="add_mobile_number_mobile_number_hint">Enter your mobile number</string>
+    <string name="add_mobile_number_mobile_number_label">Mobile number</string>
+    <string name="add_mobile_number_verification_code_hint">Enter your verification code</string>
+    <string name="add_mobile_number_verification_code_label">You should receive a 6 digits verification code shortly</string>
+
+    <string name="task_alerts_edit_edit_task_alert">Edit task alert</string>
+    <string name="task_alerts_edit_in_person">In person</string>
+    <string name="task_alerts_edit_keyword_min_char_length">Keyword needs to be at least %1$s letters long</string>
+    <string name="task_alerts_edit_keyword_or_phrase">Keyword or phrase</string>
+    <string name="task_alerts_edit_location_was_not_selected">Please enter a valid location</string>
+    <string name="task_alerts_edit_menu_item_delete">Delete</string>
+    <string name="task_alerts_edit_new_task_alert">New task alert</string>
+    <string name="task_alerts_edit_online">Online</string>
+    <string name="task_alerts_edit_save_alert">Save alert</string>
+    <string name="task_alerts_edit_update_alert">Update alert</string>
+    <string name="task_alerts_edit_within_distance_km">Within %1$skm</string>
+    <string name="task_alerts_online_phone">Online/Phone</string>
+    <string name="task_alerts_within_distance_km_suburb">Within %1$skm / %2$s</string>
+    <string name="task_alert_edit_distance_label">Distance</string>
+
+
 </resources>

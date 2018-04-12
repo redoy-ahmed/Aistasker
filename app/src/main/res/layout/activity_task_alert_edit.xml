@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/large"
+    android:background="@color/airtasker_application_background"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- <au.com.airtasker.ui.common.widgets.ScreenStateSelectorWidget
+                 android:id="@+id/task_alert_edit_state_selector_widget"
+                 style="@style/ScreenStateSelectorWidget"
+                 android:layout_centerHorizontal="true"
+                 android:layout_marginLeft="@dimen/large"
+                 android:layout_marginRight="@dimen/large"
+                 android:sectionsCount="2"
+                 android:selectedSection="0"
+                 android:textLeftFirst="@string/task_alerts_edit_in_person"
+                 android:textLeftSecond="@string/task_alerts_edit_online" />-->
+
+            <TextView
+                android:id="@+id/task_alert_edit_text_view_keyword_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/large"
+                android:text="@string/task_alerts_edit_keyword_or_phrase"
+                android:textColor="@color/grey4" />
+
+            <EditText
+                android:id="@+id/task_alert_edit_edit_text_keyword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/task_alert_edit_text_view_keyword_title"
+                android:paddingTop="@dimen/medium" />
+
+            <TextView
+                android:id="@+id/task_alert_edit_text_view_suburb_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suburb"
+                android:layout_below="@+id/task_alert_edit_edit_text_keyword"
+                android:paddingTop="@dimen/large"
+                android:textColor="@color/grey4" />
+
+            <FrameLayout
+                android:id="@+id/task_alert_edit_layout_location_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/task_alert_edit_text_view_suburb_title">
+
+                <EditText
+                    android:id="@+id/task_alert_edit_places_auto_complete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/medium" />
+
+                <Spinner
+                    android:id="@+id/task_alert_edit_location_selection_widget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/medium" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/task_alert_edit_text_view_distance_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/task_alert_edit_layout_location_wrapper"
+                android:paddingTop="@dimen/large"
+                android:text="@string/task_alert_edit_distance_label"
+                android:textColor="@color/grey4" />
+
+            <Spinner
+                android:id="@+id/task_alert_edit_drop_down"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/task_alert_edit_text_view_distance_title"
+                android:paddingTop="@dimen/medium" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/task_alert_edit_button_update_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/large"
+        android:background="@drawable/rounded_button_green"
+        android:text="@string/task_alerts_edit_save_alert"
+        android:textColor="@color/white" />
+</LinearLayout>
