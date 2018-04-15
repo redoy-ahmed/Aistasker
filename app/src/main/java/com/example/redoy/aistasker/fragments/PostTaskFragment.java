@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
@@ -149,5 +151,12 @@ public class PostTaskFragment extends Fragment {
         Intent intent = new Intent(rootView.getContext(), PostTaskActivity.class);
         intent.putExtra(taskSuggestion.toString(), taskSuggestion.toString());
         startActivity(intent);
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        super.onCreateOptionsMenu(menu, inflater);
+        menu.clear();
+        inflater.inflate(R.menu.post_task_menu, menu);
     }
 }

@@ -66,7 +66,10 @@
         <activity android:name=".activities.AirtaskerAlertsNotificationTypesActivity" />
         <activity android:name=".activities.ChangePasswordActivity" />
         <activity android:name=".activities.MobileVerificationActivity" />
-        <activity android:name=".activities.TaskAlertEditActivity"></activity>
+        <activity android:name=".activities.TaskAlertEditActivity" />
+        <activity android:name=".activities.PaymentSettingsDetails" />
+        <activity android:name=".activities.SupportActivity" />
+        <activity android:name=".activities.TermsAndConditionsActivity"></activity>
     </application>
 
 </manifest>

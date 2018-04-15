@@ -2,6 +2,8 @@ package com.example.redoy.aistasker.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -38,5 +40,13 @@ public class PrivateConversationActivity extends AppCompatActivity {
             }
         }
         return (super.onOptionsItemSelected(menuItem));
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.private_messages_menu, menu);
+        return true;
     }
 }

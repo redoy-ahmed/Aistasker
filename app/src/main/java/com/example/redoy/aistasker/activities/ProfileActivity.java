@@ -8,6 +8,8 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SwitchCompat;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -23,6 +25,7 @@ import org.apmem.tools.layouts.FlowLayout;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import lib.kingja.switchbutton.SwitchMultiButton;
 
 import static android.view.View.GONE;
 
@@ -103,7 +106,7 @@ public class ProfileActivity extends AppCompatActivity {
     RatingBar mRatingBarTop;
 
     @BindView(R.id.activity_profile_screen_state_selector_reviews)
-    SwitchCompat mStateSelectorTop;
+    SwitchMultiButton mStateSelectorTop;
 
     @BindView(R.id.profile_about_text_view_custom_about)
     TextView mTextViewAbout;
@@ -213,5 +216,13 @@ public class ProfileActivity extends AppCompatActivity {
             }
         }
         return (super.onOptionsItemSelected(menuItem));
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.profile_menu, menu);
+        return true;
     }
 }

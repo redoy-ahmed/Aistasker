@@ -24,9 +24,6 @@ import butterknife.ButterKnife;
 
 public class PaymentHistoryActivity extends AppCompatActivity {
 
-
-    @BindView(R.id.payment_history_view_tab_layout)
-    TabLayout mTabLayout;
     @BindView(R.id.payment_history_view_pager)
     ViewPager mViewPager;
     Context context;
@@ -44,7 +41,6 @@ public class PaymentHistoryActivity extends AppCompatActivity {
     private void loadDataIntoWidgets() {
         context = getApplicationContext();
         setupViewPager();
-        mTabLayout.setupWithViewPager(mViewPager);
     }
 
     private void setupViewPager() {

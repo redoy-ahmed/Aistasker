@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="@dimen/large"
     android:background="@color/airtasker_application_background"
     android:orientation="vertical">
@@ -15,16 +16,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <!-- <au.com.airtasker.ui.common.widgets.ScreenStateSelectorWidget
-                 android:id="@+id/task_alert_edit_state_selector_widget"
-                 style="@style/ScreenStateSelectorWidget"
-                 android:layout_centerHorizontal="true"
-                 android:layout_marginLeft="@dimen/large"
-                 android:layout_marginRight="@dimen/large"
-                 android:sectionsCount="2"
-                 android:selectedSection="0"
-                 android:textLeftFirst="@string/task_alerts_edit_in_person"
-                 android:textLeftSecond="@string/task_alerts_edit_online" />-->
+            <lib.kingja.switchbutton.SwitchMultiButton
+                android:id="@+id/task_alert_edit_state_selector_widget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/large"
+                android:padding="8dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/large"
+                android:layout_marginRight="@dimen/large"
+                app:selectedColor="@color/colorPrimary"
+                app:selectedTab="0"
+                app:strokeRadius="50dp"
+                app:strokeWidth="1dp"
+                app:switchTabs="@array/switch_task_alert"
+                app:textSize="15sp" />
 
             <TextView
                 android:id="@+id/task_alert_edit_text_view_keyword_title"

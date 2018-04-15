@@ -9,12 +9,21 @@
     android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
     android:orientation="vertical">
 
-    <android.support.v7.widget.SwitchCompat
+    <lib.kingja.switchbutton.SwitchMultiButton
         android:id="@+id/activity_profile_screen_state_selector_reviews"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
-        android:layout_marginTop="@dimen/medium" />
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/medium"
+        android:layout_marginRight="@dimen/medium"
+        android:layout_marginTop="@dimen/medium"
+        android:padding="8dp"
+        app:selectedColor="@color/colorPrimary"
+        app:selectedTab="0"
+        app:strokeRadius="50dp"
+        app:strokeWidth="1dp"
+        app:switchTabs="@array/switch_dashboard"
+        app:textSize="15sp" />
 
     <LinearLayout
         android:id="@+id/activity_profile_layout_completion_rate"

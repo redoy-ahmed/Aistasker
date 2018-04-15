@@ -5,22 +5,119 @@
     android:layout_height="match_parent"
     android:background="@color/airtasker_application_background">
 
-    <android.support.design.widget.TabLayout
-        android:id="@+id/payment_history_view_tab_layout"
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/payment_history_app_bar_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/airBlue"
-        app:tabGravity="fill"
-        app:tabIndicatorColor="@color/white"
-        app:tabMode="fixed"
-        app:tabSelectedTextColor="@color/white"
-        app:tabTextColor="@color/grey4" />
+        android:background="@color/transparent"
+        android:elevation="0dp"
+        android:fitsSystemWindows="false">
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/payment_history_view_pager"
+        <View
+            android:id="@+id/payment_history_screen_view_toolbar_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <lib.kingja.switchbutton.SwitchMultiButton
+            android:id="@+id/dashboard_state_selector_widget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/large"
+            android:padding="8dp"
+            app:selectedColor="@color/colorPrimary"
+            app:selectedTab="0"
+            app:strokeRadius="50dp"
+            app:strokeWidth="1dp"
+            app:switchTabs="@array/switch_payment_history"
+            app:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/large" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/medium"
+            android:layout_marginLeft="@dimen/large"
+            android:layout_marginRight="@dimen/large"
+            android:layout_marginTop="@dimen/medium"
+            android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_calendar_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/medium"
+                android:layout_marginStart="@dimen/medium"
+                android:text="@string/payment_history_showing_label"
+                android:textColor="@color/grey5" />
+
+            <TextView
+                android:id="@+id/payment_history_text_view_date_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/small"
+                android:layout_marginStart="@dimen/small"
+                android:drawableEnd="@drawable/ic_triangle_down"
+                android:drawablePadding="@dimen/small"
+                android:drawableRight="@drawable/ic_triangle_down"
+                android:padding="@dimen/medium"
+                android:textColor="@color/airtasker_primary_color" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/payment_history_view_separator_summary"
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+        <FrameLayout
+            android:id="@+id/payment_history_layout_summary_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey1"
+            android:paddingBottom="@dimen/medium"
+            android:paddingTop="@dimen/large">
+
+            <TextView
+                android:id="@+id/payment_history_text_view_date_transactions_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:textColor="@color/grey4" />
+        </FrameLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        android:layout_marginTop="-1dp">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/payment_history_swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/payment_history_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </FrameLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/payment_history_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </android.support.design.widget.CoordinatorLayout>

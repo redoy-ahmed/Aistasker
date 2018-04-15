@@ -2,6 +2,8 @@ package com.example.redoy.aistasker.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
@@ -65,5 +67,13 @@ public class PostTaskActivity extends AppCompatActivity implements StepperLayout
             }
         }
         return (super.onOptionsItemSelected(menuItem));
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.post_task_menu, menu);
+        return true;
     }
 }

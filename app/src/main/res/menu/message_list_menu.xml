@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/message_list_action_title"
+        android:actionLayout="@layout/action_layout_search_title"
+        android:title=""
+        app:showAsAction="always|collapseActionView" />
+    <item
+        android:id="@+id/message_list_action_search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/browse_tasks_search_menu_item"
+        app:showAsAction="always" />
+</menu>

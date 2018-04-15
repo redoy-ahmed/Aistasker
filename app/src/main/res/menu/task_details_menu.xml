@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_call"
+        android:icon="@drawable/ic_call_white"
+        android:title="@string/menu_item_call"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_edit"
+        android:title="@string/task_details_menu_edit_item"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_copy"
+        android:title="@string/task_details_menu_item_copy"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_report"
+        android:title="@string/task_details_menu_item_report"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_cancel"
+        android:title="@string/task_details_menu_item_cancel_task"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_share_task"
+        android:icon="@drawable/ic_share_white"
+        android:title="@string/task_details_menu_item_share_task"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_task_receipt"
+        android:icon="@drawable/ic_receipt_white"
+        android:title="@string/task_details_menu_item_view_receipt"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_task_calendar"
+        android:title="@string/task_details_menu_item_add_to_calendar"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_task_information"
+        android:icon="@drawable/ic_information_circle_inverted"
+        android:title="Information"
+        app:showAsAction="ifRoom" />
+</menu>

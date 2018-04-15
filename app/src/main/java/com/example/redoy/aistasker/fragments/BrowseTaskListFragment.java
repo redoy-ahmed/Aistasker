@@ -6,6 +6,8 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -94,5 +96,12 @@ public class BrowseTaskListFragment extends Fragment {
         allItems.add(new TaskItem("Task 5", "Australia", "Saturday, Mar 31, 2018", "clean my clothes", "Drafted", "additional information","A$300"));
 
         return allItems;
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        super.onCreateOptionsMenu(menu, inflater);
+        menu.clear();
+        inflater.inflate(R.menu.browse_tasks_menu, menu);
     }
 }

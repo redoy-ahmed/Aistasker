@@ -31,6 +31,7 @@
 
     <dimen name="very_large">24dp</dimen>
     <dimen name="profile_section_margin">40dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 
 
 </resources>

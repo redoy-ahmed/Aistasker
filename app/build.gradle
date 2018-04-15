@@ -68,4 +68,10 @@ dependencies {
 
     //expandable textview
     implementation 'com.ms-square:expandableTextView:0.1.4'
+
+    //Custom Switch
+    implementation 'lib.kingja.switchbutton:switchbutton:1.1.6'
+
+    //MarkDown View
+    implementation 'us.feras.mdv:markdownview:1.1.0'
 }

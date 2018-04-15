@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_attach"
+        android:actionLayout="@layout/layout_post_task_attachment_toolbar"
+        android:title="@string/post_task_menu_item_attachments"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_discard"
+        android:icon="@drawable/ic_bin_white_24dp"
+        android:title="@string/post_task_menu_item_discard"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_print_received_task"
+        android:title="Print received task"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_print_to_send_task"
+        android:title="Print to send task"
+        app:showAsAction="ifRoom" />
+</menu>

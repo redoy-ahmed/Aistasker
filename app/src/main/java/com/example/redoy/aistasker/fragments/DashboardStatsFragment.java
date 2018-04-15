@@ -2,7 +2,6 @@ package com.example.redoy.aistasker.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.SwitchCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RatingBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.redoy.aistasker.R;
 
@@ -17,6 +17,7 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import lib.kingja.switchbutton.SwitchMultiButton;
 
 public class DashboardStatsFragment extends Fragment {
 
@@ -54,7 +55,7 @@ public class DashboardStatsFragment extends Fragment {
     TextView lblCompletedTasks;
 
     @BindView(R.id.dashboard_state_selector_widget)
-    SwitchCompat mScreenStateSelectorWidget;
+    SwitchMultiButton mScreenStateSelectorWidget;
 
     @BindView(R.id.overdue_bar)
     View overdueBar;
@@ -76,6 +77,14 @@ public class DashboardStatsFragment extends Fragment {
 
         rootView = inflater.inflate(R.layout.fragment_dashboard_stats, container, false);
         ButterKnife.bind(this, rootView);
+
+
+        mScreenStateSelectorWidget.setOnSwitchListener(new SwitchMultiButton.OnSwitchListener() {
+            @Override
+            public void onSwitch(int position, String tabText) {
+                Toast.makeText(rootView.getContext(), tabText, Toast.LENGTH_SHORT).show();
+            }
+        });
 
         return rootView;
     }
