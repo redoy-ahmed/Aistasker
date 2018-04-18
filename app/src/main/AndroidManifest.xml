@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.redoy.aistasker">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -16,6 +17,10 @@
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
 
         <activity android:name=".activities.SplashScreenActivity">
             <intent-filter>
@@ -69,7 +74,10 @@
         <activity android:name=".activities.TaskAlertEditActivity" />
         <activity android:name=".activities.PaymentSettingsDetails" />
         <activity android:name=".activities.SupportActivity" />
-        <activity android:name=".activities.TermsAndConditionsActivity"></activity>
+        <activity android:name=".activities.TermsAndConditionsActivity" />
+        <activity
+            android:name=".activities.BrowseTasksFilterActivity"
+            android:label="Filters" />
     </application>
 
 </manifest>

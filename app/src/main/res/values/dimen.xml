@@ -33,5 +33,7 @@
     <dimen name="profile_section_margin">40dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
 
+    <dimen name="task_filter_action_button_height">80dp</dimen>
+
 
 </resources>

@@ -394,5 +394,17 @@
     <string name="task_details_menu_item_report">Report</string>
     <string name="task_details_menu_item_view_receipt">View receipt</string>
 
+    <string name="browse_tasks_filter_task_category">Category</string>
+    <string name="browse_tasks_filter_task_type">To be done</string>
+    <string name="browse_tasks_filter_task_type_task_with_location">In person</string>
+    <string name="browse_tasks_filter_task_type_online">Remotely</string>
+    <string name="browse_tasks_filter_task_type_all">All</string>
+    <string name="browse_tasks_filter_search_location">Location</string>
+    <string name="browse_tasks_filter_show_tasks_within">Distance</string>
+    <string name="browse_tasks_filter_show_tasks_price">Price</string>
+    <string name="browse_tasks_filter_task_status_description">Available tasks only</string>
+    <string name="browse_tasks_filter_task_status_sub_description">Hide tasks that are already assigned</string>
+    <string name="browse_tasks_filter_apply_button_text">Apply</string>
+
 
 </resources>

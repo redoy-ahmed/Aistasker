@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grey2">
 
     <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/browse_tasks_without_google_map"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -133,9 +135,11 @@
         </LinearLayout>
     </android.support.design.widget.CoordinatorLayout>
 
-    <RelativeLayout
+    <com.google.android.gms.maps.MapView
         android:id="@+id/browse_tasks_layout_map"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="gone" />
+        android:visibility="gone"
+        tools:context="com.example.redoy.lynk.activity.MainActivity" />
+
 </FrameLayout>
