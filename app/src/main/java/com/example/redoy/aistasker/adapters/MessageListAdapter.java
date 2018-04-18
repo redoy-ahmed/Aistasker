@@ -1,6 +1,7 @@
 package com.example.redoy.aistasker.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.redoy.aistasker.R;
+import com.example.redoy.aistasker.activities.PrivateConversationActivity;
 import com.example.redoy.aistasker.models.MessageItem;
 
 import java.util.ArrayList;
@@ -29,7 +31,7 @@ public class MessageListAdapter extends RecyclerView.Adapter<MessageListAdapter.
     public MessageListAdapter.RecyclerViewHolderMessageList onCreateViewHolder(ViewGroup parent, int viewType) {
 
         View layoutView = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item_message, parent, false);
-        MessageListAdapter.RecyclerViewHolderMessageList rcv = new MessageListAdapter.RecyclerViewHolderMessageList(layoutView);
+        MessageListAdapter.RecyclerViewHolderMessageList rcv = new MessageListAdapter.RecyclerViewHolderMessageList(layoutView, context);
         return rcv;
     }
 
@@ -57,13 +59,14 @@ public class MessageListAdapter extends RecyclerView.Adapter<MessageListAdapter.
         public TextView mMessagePreviewTextView;
 
 
-        public RecyclerViewHolderMessageList(final View itemView) {
+        public RecyclerViewHolderMessageList(final View itemView, final Context context) {
             super(itemView);
             ButterKnife.bind(this, itemView);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    context.startActivity(new Intent(context, PrivateConversationActivity.class));
                 }
             });
         }
